@@ -61,6 +61,13 @@ public:
         genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
+
+genesis.nTime = 1411016405;
+genesis.nNonce = 1544266;
+assert(genesis.hashMerkleRoot == uint256("0x174e2f91a7f6e3a4596df7f48a4744de494dcfffee00a652274f4049eac4b7c0"));
+assert(genesis.GetHash() == uint256("0x00000ebcecd9c5bec0311d97f997d09c887b6952123f1a492d417ed1e3e6282f"));
+
+
         if (false) 
         {
             //This will output (to stdout) the code for a new genesis block when it is found
@@ -78,7 +85,7 @@ public:
                     break;
                 if ((genesis.nNonce & 0xFFFF) == 0)
                 {
-                    printf("nonce %08X: hash = %s \n",genesis.nNonce, thash.ToString().c_str();
+                    printf("nonce %08X: hash = %s \n",genesis.nNonce, thash.ToString().c_str());
                 }
                 ++genesis.nNonce;
                 if (genesis.nNonce == 0)
@@ -94,8 +101,6 @@ public:
             exit(1);
         }
 
-        assert(genesis.hashMerkleRoot == uint256("0xe85e61ae6240a486898d36427284d1bfeb04d56edb137288b9e3614bc437c3b0"));
-        assert(hashGenesisBlock == uint256("0x0000092c4440834fd6f231f54a8dbc3e989091277e4be49cf28b7f62b0385b75"));
 
         vSeeds.push_back(CDNSSeedData("seed1.bitchcoin.net", "seed1.bitchcoin.net"));
         vSeeds.push_back(CDNSSeedData("seed2.bitchcoin.net", "seed2.bitchcoin.net"));
@@ -181,6 +186,12 @@ public:
 
         // Modify the testnet genesis block so the timestamp is valid for a later start so that they don't match
         hashGenesisBlock = genesis.GetHash();
+
+        genesis.nTime = 1411022846;
+genesis.nNonce = 592527;
+assert(genesis.hashMerkleRoot == uint256("0x174e2f91a7f6e3a4596df7f48a4744de494dcfffee00a652274f4049eac4b7c0"));
+assert(genesis.GetHash() == uint256("0x000003030c996912d1d5d0b47f41ab2316da31cea8e15b5c44226aaf76ab351f"));
+
         if (false) 
         {
             //This will output (to stdout) the code for a new genesis block when it is found
@@ -198,7 +209,7 @@ public:
                     break;
                 if ((genesis.nNonce & 0xFFFF) == 0)
                 {
-                    printf("nonce %08X: hash = %s \n",genesis.nNonce, thash.ToString().c_str();
+                    printf("nonce %08X: hash = %s \n",genesis.nNonce, thash.ToString().c_str());
                 }
                 ++genesis.nNonce;
                 if (genesis.nNonce == 0)
@@ -213,8 +224,6 @@ public:
             printf("assert(genesis.GetHash() == uint256(\"0x%s\"));\n",genesis.GetHash().ToString().c_str());
             exit(1);
         }
-        assert(hashGenesisBlock==uint256("0x00000202f5e6dfd3764cad1bc6011484d8c3f1df023ece2e6e88b31c87f88d00"));
-        assert(genesis.hashMerkleRoot == uint256("0xe85e61ae6240a486898d36427284d1bfeb04d56edb137288b9e3614bc437c3b0"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
