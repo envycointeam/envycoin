@@ -83,5 +83,5 @@ After 28 days, Bitchcoin's inflation rate drops to around 16%/year, and somewher
 
 ## Network ports
 
-* RPC 33111
-* P2P 33112
+* RPC 6111
+* P2P 6112
