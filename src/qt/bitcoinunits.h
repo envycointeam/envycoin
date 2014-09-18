@@ -26,10 +26,10 @@ public:
     {
         BTCH,
         //formerly mBTCH
-        //formerly Fractoid
+        //formerly Cunt
         MBTCH = 3,
         kBTCH = 4,
-        Fractoid = 5
+        Cunt = 5
     };
 
     //! @name Static API

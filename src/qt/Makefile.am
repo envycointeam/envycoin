@@ -5,12 +5,12 @@ AM_CPPFLAGS += -I$(top_srcdir)/src \
   -I$(top_builddir)/src/qt/forms \
   $(PROTOBUF_CFLAGS) \
   $(QR_CFLAGS)
-bin_PROGRAMS = fractalcoin-qt
+bin_PROGRAMS = bitchcoin-qt
 noinst_LIBRARIES = libbitcoinqt.a
 SUBDIRS = $(BUILD_TEST_QT)
 DIST_SUBDIRS = test
 
-# fractalcoin qt core #
+# bitchcoin qt core #
 QT_TS = \
   locale/bitcoin_ach.ts \
   locale/bitcoin_af_ZA.ts \
@@ -158,8 +158,8 @@ QT_MOC = \
   overviewpage.moc \
   rpcconsole.moc
 
-QT_QRC_CPP = qrc_fractalcoin.cpp
-QT_QRC = fractalcoin.qrc
+QT_QRC_CPP = qrc_bitchcoin.cpp
+QT_QRC = bitchcoin.qrc
 
 PROTOBUF_CC = paymentrequest.pb.cc
 PROTOBUF_H = paymentrequest.pb.h
@@ -318,7 +318,7 @@ RES_IMAGES = \
 
 RES_MOVIES = $(wildcard res/movies/spinner-*.png)
 
-BTCHCOIN_RC = res/fractalcoin-qt-res.rc
+BTCHCOIN_RC = res/bitchcoin-qt-res.rc
 
 libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms $(QT_DBUS_INCLUDES)
@@ -335,23 +335,23 @@ BUILT_SOURCES = $(nodist_libbitcoinqt_a_SOURCES)
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# fractalcoin-qt binary #
-fractalcoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
+# bitchcoin-qt binary #
+bitchcoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms
-fractalcoin_qt_SOURCES = bitcoin.cpp
+bitchcoin_qt_SOURCES = bitcoin.cpp
 if TARGET_DARWIN
-  fractalcoin_qt_SOURCES += $(BTCHCOIN_MM)
+  bitchcoin_qt_SOURCES += $(BTCHCOIN_MM)
 endif
 if TARGET_WINDOWS
-  fractalcoin_qt_SOURCES += $(BTCHCOIN_RC)
+  bitchcoin_qt_SOURCES += $(BTCHCOIN_RC)
 endif
-fractalcoin_qt_LDADD = libbitcoinqt.a $(LIBBITCOIN_SERVER)
+bitchcoin_qt_LDADD = libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-fractalcoin_qt_LDADD += $(LIBBITCOIN_WALLET) $(LIBBITCOIN_SERVER_WALLET)
+bitchcoin_qt_LDADD += $(LIBBITCOIN_WALLET) $(LIBBITCOIN_SERVER_WALLET)
 endif
-fractalcoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
+bitchcoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS)
-fractalcoin_qt_LDFLAGS = $(QT_LDFLAGS)
+bitchcoin_qt_LDFLAGS = $(QT_LDFLAGS)
 
 # forms/foo.h -> forms/ui_foo.h
 QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))

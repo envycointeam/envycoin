@@ -1,33 +1,33 @@
 #!/usr/bin/make -f
 # -*- mode: makefile; coding: utf-8 -*-
 
-#DEB_MAKE_CHECK_TARGET = test_fractalcoin
-#build/fractalcoind::
-#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_fractalcoin)
+#DEB_MAKE_CHECK_TARGET = test_bitchcoin
+#build/bitchcoind::
+#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_bitchcoin)
 
-DEB_INSTALL_EXAMPLES_fractalcoind += debian/examples/*
-DEB_INSTALL_MANPAGES_fractalcoind += debian/manpages/*
+DEB_INSTALL_EXAMPLES_bitchcoind += debian/examples/*
+DEB_INSTALL_MANPAGES_bitchcoind += debian/manpages/*
 
 %:
 	dh --with bash-completion $@
 
 override_dh_auto_build:
-	cd src; $(MAKE) -f makefile.unix fractalcoind
+	cd src; $(MAKE) -f makefile.unix bitchcoind
 	$(MAKE)
 
 override_dh_auto_clean:
-	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f fractalcoin-qt; fi
+	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f bitchcoin-qt; fi
 	cd src; $(MAKE) -f makefile.unix clean
 
 override_dh_auto_configure:
-	qmake fractalcoin-qt.pro USE_QRCODE=1
+	qmake bitchcoin-qt.pro USE_QRCODE=1
 
 override_dh_auto_test:
-	cd src; $(MAKE) -f makefile.unix test_fractalcoin
-	src/test_fractalcoin
+	cd src; $(MAKE) -f makefile.unix test_bitchcoin
+	src/test_bitchcoin
 
 # Ensure wrapper is set executable
-binary-post-install/fractalcoind:
-	chmod +x $(cdbs_curdestdir)usr/bin/fractalcoind
-binary-post-install/fractalcoin-qt:
-	chmod +x $(cdbs_curdestdir)usr/bin/fractalcoin-qt
+binary-post-install/bitchcoind:
+	chmod +x $(cdbs_curdestdir)usr/bin/bitchcoind
+binary-post-install/bitchcoin-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/bitchcoin-qt

@@ -123,7 +123,7 @@ OverviewPage::OverviewPage(QWidget *parent) :
 
     // Customized branding image.
     boost::filesystem::path fractalpath = GetDataDir(false);
-    fractalpath /= "fractalcoin.png";
+    fractalpath /= "bitchcoin.png";
     QPixmap shibecoin(fractalpath.string().c_str());
 
     if ( !shibecoin.isNull() ) {

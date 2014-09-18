@@ -1,14 +1,14 @@
-# Fractalcoin Core [BTCH]
+# Bitchcoin Core [BTCH]
 ==========================
 
-![Fractalcoin](http://i.imgur.com/LCv2wcn.png)
+![Bitchcoin](http://i.imgur.com/LCv2wcn.png)
 
-## What is Fractalcoin?
-Fractalcoin is a cryptocurrency like Bitcoin, although with many key differences. Fractalcoin's wallet is forked from Bitcoin 0.9.2, and thus has a build process slightly different from most altcoins.
+## What is Bitchcoin?
+Bitchcoin is a cryptocurrency like Bitcoin, although with many key differences. Bitchcoin's wallet is forked from Bitcoin 0.9.2, and thus has a build process slightly different from most altcoins.
 
 ## Features
 
-The key features of Fractalcoin:
+The key features of Bitchcoin:
 
 * X11 Proof of work (low power, cool hardware, ASIC resistant, etc)
 * One minute block times
@@ -24,7 +24,7 @@ The key features of Fractalcoin:
 http://fractalco.in/
 
 ## License
-Fractalcoin is released under the terms of the MIT license. See [COPYING](COPYING)
+Bitchcoin is released under the terms of the MIT license. See [COPYING](COPYING)
 for more information or see http://opensource.org/licenses/MIT.
 
 ## Development and contributions
@@ -70,12 +70,12 @@ This helps to ensure Slingshield works as expected, ensures the network stays st
 
 ## Low inflation
 
-After 28 days, Fractalcoin's inflation rate drops to around 16%/year, and somewhere in that year, the inflation rate actually drops to zero. Fractalcoin's very fast schedule to zero inflation ensures that the price will stay stable, while percentage based transaction fees ensure that it will forever have a strong network.  
+After 28 days, Bitchcoin's inflation rate drops to around 16%/year, and somewhere in that year, the inflation rate actually drops to zero. Bitchcoin's very fast schedule to zero inflation ensures that the price will stay stable, while percentage based transaction fees ensure that it will forever have a strong network.  
 
 
-##  Building fractalcoind/fractalcoin-cli/fractalcoin-qt
+##  Building bitchcoind/bitchcoin-cli/bitchcoin-qt
 
-  The following are developer notes on how to build Fractalcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+  The following are developer notes on how to build Bitchcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
   - [OSX Build Notes](doc/build-osx.md)
   - [Unix Build Notes](doc/build-unix.md)

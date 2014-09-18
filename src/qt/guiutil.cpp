@@ -79,7 +79,7 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 
     widget->setFont(bitcoinAddressFont());
 #if QT_VERSION >= 0x040700
-    widget->setPlaceholderText(QObject::tr("Enter a Fractalcoin address (e.g. FJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)"));
+    widget->setPlaceholderText(QObject::tr("Enter a Bitchcoin address (e.g. FJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)"));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
@@ -96,8 +96,8 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no fractalcoin: URI
-    if(!uri.isValid() || uri.scheme() != QString("fractalcoin"))
+    // return if URI is not valid or is no bitchcoin: URI
+    if(!uri.isValid() || uri.scheme() != QString("bitchcoin"))
         return false;
 
     SendCoinsRecipient rv;
@@ -156,13 +156,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert fractalcoin:// to fractalcoin:
+    // Convert bitchcoin:// to bitchcoin:
     //
-    //    Cannot handle this later, because fractalcoin:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because bitchcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("fractalcoin://", Qt::CaseInsensitive))
+    if(uri.startsWith("bitchcoin://", Qt::CaseInsensitive))
     {
-        uri.replace(0, 11, "fractalcoin:");
+        uri.replace(0, 11, "bitchcoin:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -170,7 +170,7 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("fractalcoin:%1").arg(info.address);
+    QString ret = QString("bitchcoin:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
@@ -387,12 +387,12 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "Fractalcoin.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Bitchcoin.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for Fractalcoin.lnk
+    // check for Bitchcoin.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -469,7 +469,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "fractalcoin.desktop";
+    return GetAutostartDir() / "bitchcoin.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -510,7 +510,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a bitcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=Fractalcoin\n";
+        optionFile << "Name=Bitchcoin\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

@@ -1,6 +1,6 @@
 [Protocol]
-exec=fractalcoin-qt '%u'
-protocol=fractalcoin
+exec=bitchcoin-qt '%u'
+protocol=bitchcoin
 input=none
 output=none
 helper=true

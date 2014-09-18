@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Fractalcoin
-Comment=Fractalcoin P2P Cryptocurrency
-Comment[fr]=Fractalcoin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Fractalcoin, eşten eşe kriptografik sanal para birimi
-Exec=fractalcoin-qt %u
+Name=Bitchcoin
+Comment=Bitchcoin P2P Cryptocurrency
+Comment[fr]=Bitchcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Bitchcoin, eşten eşe kriptografik sanal para birimi
+Exec=bitchcoin-qt %u
 Terminal=false
 Type=Application
-Icon=fractalcoin128
-MimeType=x-scheme-handler/fractalcoin;
+Icon=bitchcoin128
+MimeType=x-scheme-handler/bitchcoin;
 Categories=Office;Finance;
