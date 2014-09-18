@@ -16,9 +16,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(MFRAC);
-    unitlist.append(kFRAC);
-    unitlist.append(FRAC);
+    unitlist.append(MBTCH);
+    unitlist.append(kBTCH);
+    unitlist.append(BTCH);
     unitlist.append(Fractoid);
     return unitlist;
 }
@@ -27,9 +27,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case MFRAC:
-    case kFRAC:
-    case FRAC:
+    case MBTCH:
+    case kBTCH:
+    case BTCH:
     case Fractoid:
         return true;
     default:
@@ -41,9 +41,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case MFRAC: return QString("MFRAC");
-    case kFRAC: return QString("kFRAC");
-    case FRAC: return QString("FRAC");
+    case MBTCH: return QString("MBTCH");
+    case kBTCH: return QString("kBTCH");
+    case BTCH: return QString("BTCH");
     case Fractoid: return QString("Fractoid");
     default: return QString("???");
     }
@@ -53,9 +53,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case MFRAC: return QString("Mega-Fractalcoin (1,000,000 FRAC)");
-    case kFRAC: return QString("Kilo-Fractalcoin (1000 FRAC)");
-    case FRAC: return QString("Fractalcoin");
+    case MBTCH: return QString("Mega-Fractalcoin (1,000,000 BTCH)");
+    case kBTCH: return QString("Kilo-Fractalcoin (1000 BTCH)");
+    case BTCH: return QString("Fractalcoin");
     case Fractoid: return QString("Fractoid (1 / 100,000,000");
     default: return QString("???");
     }
@@ -65,9 +65,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case MFRAC: return Q_INT64_C(100000000000000);
-    case kFRAC: return Q_INT64_C(100000000000);
-    case FRAC:  return Q_INT64_C(100000000);
+    case MBTCH: return Q_INT64_C(100000000000000);
+    case kBTCH: return Q_INT64_C(100000000000);
+    case BTCH:  return Q_INT64_C(100000000);
     case Fractoid: return Q_INT64_C(1);
     default:    return Q_INT64_C(100000000);
     }
@@ -77,9 +77,9 @@ qint64 BitcoinUnits::maxAmount(int unit)
 {
     switch(unit)
     {
-    case MFRAC: return Q_INT64_C(900000);
-    case kFRAC: return Q_INT64_C(900000000);
-    case FRAC:  return Q_INT64_C(900000000000);    //less than the coin supply until the year 2170
+    case MBTCH: return Q_INT64_C(900000);
+    case kBTCH: return Q_INT64_C(900000000);
+    case BTCH:  return Q_INT64_C(900000000000);    //less than the coin supply until the year 2170
     case Fractoid: return Q_INT64_C(9000000000000000000); // Slightly under max value for int64
     default:   return 0;
     }
@@ -89,9 +89,9 @@ int BitcoinUnits::amountDigits(int unit)
 {
     switch(unit)
     {
-    case MFRAC: return 6;  // 900,000 (# digits, without commas)
-    case kFRAC: return 9;  // 900,000,000
-    case FRAC:  return 12; // 900,000,000,000
+    case MBTCH: return 6;  // 900,000 (# digits, without commas)
+    case kBTCH: return 9;  // 900,000,000
+    case BTCH:  return 12; // 900,000,000,000
     case Fractoid: return 19; // 9,000,000,000,000,000,000
     default: return 0;
     }
@@ -101,9 +101,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case MFRAC: return 14;
-    case kFRAC: return 11;
-    case FRAC: return 8;
+    case MBTCH: return 14;
+    case kBTCH: return 11;
+    case BTCH: return 8;
     case Fractoid: return 0;
     default: return 0;
     }

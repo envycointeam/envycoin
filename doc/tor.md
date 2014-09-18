@@ -1,4 +1,4 @@
-TOR SUPPORT IN FRACCOIN
+TOR SUPPORT IN BTCHCOIN
 =======================
 
 It is possible to run Fractalcoin as a Tor hidden service, and connect to such services.

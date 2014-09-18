@@ -148,7 +148,7 @@ QT_MOC_CPP = \
   moc_walletmodel.cpp \
   moc_walletview.cpp
 
-FRACCOIN_MM = \
+BTCHCOIN_MM = \
   macdockiconhandler.mm \
   macnotificationhandler.mm
 
@@ -318,7 +318,7 @@ RES_IMAGES = \
 
 RES_MOVIES = $(wildcard res/movies/spinner-*.png)
 
-FRACCOIN_RC = res/fractalcoin-qt-res.rc
+BTCHCOIN_RC = res/fractalcoin-qt-res.rc
 
 libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms $(QT_DBUS_INCLUDES)
@@ -340,10 +340,10 @@ fractalcoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms
 fractalcoin_qt_SOURCES = bitcoin.cpp
 if TARGET_DARWIN
-  fractalcoin_qt_SOURCES += $(FRACCOIN_MM)
+  fractalcoin_qt_SOURCES += $(BTCHCOIN_MM)
 endif
 if TARGET_WINDOWS
-  fractalcoin_qt_SOURCES += $(FRACCOIN_RC)
+  fractalcoin_qt_SOURCES += $(BTCHCOIN_RC)
 endif
 fractalcoin_qt_LDADD = libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
@@ -365,7 +365,7 @@ QT_QM=$(QT_TS:.ts=.qm)
 bitcoinstrings.cpp: FORCE
 	$(MAKE) -C $(top_srcdir)/src qt/bitcoinstrings.cpp
 
-translate: bitcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(FRACCOIN_MM)
+translate: bitcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BTCHCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
 	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts locale/bitcoin_en.ts
 

@@ -247,7 +247,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRACCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BTCHCOINS&lt;/b&gt;!</source>
         <translation>Warnung: Wenn Sie ihre Brieftasche verschlüsseln und ihr Passwort verlieren, werden Sie &lt;b&gt;alle ihre Fractalcoins verlieren&lt;/b&gt;!</translation>
     </message>
     <message>

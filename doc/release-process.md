@@ -111,7 +111,7 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 	make
 	export QTDIR=/opt/local/share/qt4  # needed to find translations/qt_*.qm files
 	T=$(contrib/qt_translations.py $QTDIR/translations src/qt/locale)
-        export CODESIGNARGS='--keychain ...path_to_keychain --sign "Developer ID Application: FRACCOIN FOUNDATION, INC., THE"'
+        export CODESIGNARGS='--keychain ...path_to_keychain --sign "Developer ID Application: BTCHCOIN FOUNDATION, INC., THE"'
 	python2.7 contrib/macdeploy/macdeployqtplus Fractalcoin-Qt.app -sign -add-qt-tr $T -dmg -fancy contrib/macdeploy/fancy.plist
 
  Build output expected: Fractalcoin-Qt.dmg

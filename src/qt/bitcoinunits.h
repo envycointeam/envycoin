@@ -24,11 +24,11 @@ public:
      */
     enum Unit   //Note: preserve positions in order to preserve existing settings
     {
-        FRAC,
-        //formerly mFRAC
+        BTCH,
+        //formerly mBTCH
         //formerly Fractoid
-        MFRAC = 3,
-        kFRAC = 4,
+        MBTCH = 3,
+        kBTCH = 4,
         Fractoid = 5
     };
 

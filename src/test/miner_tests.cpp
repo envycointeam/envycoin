@@ -12,7 +12,7 @@ extern void SHA256Transform(void* pstate, void* pinput, const void* pinit);
 BOOST_AUTO_TEST_SUITE(miner_tests)
 
 // this array of extranonce/nonce combinations has been generated
-// to be replayed on top of the FRACCOIN genesis block.
+// to be replayed on top of the BTCHCOIN genesis block.
 static
 struct {
     unsigned char extranonce;

@@ -136,7 +136,7 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
                 // Parse amount in C locale with no number separators
                 QLocale locale(QLocale::c());
                 locale.setNumberOptions(QLocale::OmitGroupSeparator | QLocale::RejectGroupSeparator);
-                if(!BitcoinUnits::parse(BitcoinUnits::FRAC, i->second, &rv.amount, locale))
+                if(!BitcoinUnits::parse(BitcoinUnits::BTCH, i->second, &rv.amount, locale))
                 {
                     return false;
                 }
@@ -177,7 +177,7 @@ QString formatBitcoinURI(const SendCoinsRecipient &info)
     {
         QLocale localeC(QLocale::c());
         localeC.setNumberOptions(QLocale::OmitGroupSeparator | QLocale::RejectGroupSeparator);
-        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::FRAC, info.amount, false, true, localeC));
+        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::BTCH, info.amount, false, true, localeC));
         paramCount++;
     }
 
