@@ -57,13 +57,11 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nBits    = 0x1e0ffff0;
-        genesis.nTime = 1411014101;
-        genesis.nNonce = 0;
 
-        hashGenesisBlock = genesis.GetHash();
 
 genesis.nTime = 1411016405;
 genesis.nNonce = 1544266;
+        hashGenesisBlock = genesis.GetHash();
 assert(genesis.hashMerkleRoot == uint256("0x174e2f91a7f6e3a4596df7f48a4744de494dcfffee00a652274f4049eac4b7c0"));
 assert(genesis.GetHash() == uint256("0x00000ebcecd9c5bec0311d97f997d09c887b6952123f1a492d417ed1e3e6282f"));
 
@@ -185,10 +183,10 @@ public:
         strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start so that they don't match
-        hashGenesisBlock = genesis.GetHash();
 
         genesis.nTime = 1411022846;
 genesis.nNonce = 592527;
+        hashGenesisBlock = genesis.GetHash();
 assert(genesis.hashMerkleRoot == uint256("0x174e2f91a7f6e3a4596df7f48a4744de494dcfffee00a652274f4049eac4b7c0"));
 assert(genesis.GetHash() == uint256("0x000003030c996912d1d5d0b47f41ab2316da31cea8e15b5c44226aaf76ab351f"));
 
