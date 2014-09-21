@@ -6,13 +6,18 @@
 ## What is Bitchcoin?
 Bitchcoin is a cryptocurrency like Bitcoin, although with many key differences. Bitchcoin's wallet is forked from Bitcoin 0.9.2, and thus has a build process slightly different from most altcoins.
 
-## Features
+## Specs
 
-The key features of Bitchcoin:
+Bitchcoin specs:
 
-* X11 Proof of work (low power, cool hardware, ASIC resistant, etc)
-* One minute block times
-* Digishield is used initially for difficulty adjustment. After block 40352, Slingshield is used for difficulty adjustment
+* RPC 6111
+* P2P 6112
+* 20 BTCH per block for 1st month. Then drops to 10 BTCH
+* Every 10K blocks, there is a bitch block with no reward
+* no premine
+* X11 because it's the one people bitch the least about
+* First "fair ninja" 
+* idk 
 
 
 ## License
@@ -24,7 +29,7 @@ Development is ongoing and the development team as well as other volunteers can 
 
 
 
-##  Building bitchcoind/bitchcoin-cli/bitchcoin-qt
+##  Building bitchcoind/bitchcoin-cli/bitchcoin-qt (these are actually useful)
 
   The following are developer notes on how to build Bitchcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
@@ -34,5 +39,3 @@ Development is ongoing and the development team as well as other volunteers can 
 
 ## Network ports
 
-* RPC 6111
-* P2P 6112
