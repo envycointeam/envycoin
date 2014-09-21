@@ -44,7 +44,7 @@ public:
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
         // be spent as it did not originally exist in the database.
-        const char* pszTimestamp = "NY Times 9/17/2014 Obama Pressing Leaders to Speed Ebola Response";
+        const char* pszTimestamp = "NY Times 9/20/2014 ex-employees say home depot left data vulnerable";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -59,11 +59,10 @@ public:
         genesis.nBits    = 0x1e0ffff0;
 
 
-genesis.nTime = 1411016405;
-genesis.nNonce = 1544266;
-        hashGenesisBlock = genesis.GetHash();
-assert(genesis.hashMerkleRoot == uint256("0x174e2f91a7f6e3a4596df7f48a4744de494dcfffee00a652274f4049eac4b7c0"));
-assert(genesis.GetHash() == uint256("0x00000ebcecd9c5bec0311d97f997d09c887b6952123f1a492d417ed1e3e6282f"));
+        genesis.nTime = 1411271178;
+        genesis.nNonce = 614264;
+        assert(genesis.hashMerkleRoot == uint256("0x7fe1914ce8ec112ed706ac0c1ace60c6a1c3c238293d94256b2083d8e8729f21"));
+        assert(genesis.GetHash() == uint256("0x000009ee1dec51a93d25a3a3230bfb2083180a926f4eddd61ec58e9c01cbb15b"));
 
 
         if (false) 
@@ -100,33 +99,21 @@ assert(genesis.GetHash() == uint256("0x00000ebcecd9c5bec0311d97f997d09c887b69521
         }
 
 
-        vSeeds.push_back(CDNSSeedData("seed1.bitchcoin.net", "seed1.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed2.bitchcoin.net", "seed2.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed3.bitchcoin.net", "seed3.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed4.bitchcoin.net", "seed4.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed5.bitchcoin.net", "seed5.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed6.bitchcoin.net", "seed6.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed7.bitchcoin.net", "seed7.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed8.bitchcoin.net", "seed8.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed1.fractalco.in", "seed1.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed2.fractalco.in", "seed2.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed3.fractalco.in", "seed3.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed4.fractalco.in", "seed4.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed5.fractalco.in", "seed5.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed6.fractalco.in", "seed6.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed7.fractalco.in", "seed7.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed8.fractalco.in", "seed8.fractalco.in"));
+        hashGenesisBlock = genesis.GetHash();
         vSeeds.push_back(CDNSSeedData("earlz.net", "earlz.net"));
+        vSeeds.push_back(CDNSSeedData("b1.earlz.net", "b1.earlz.net"));
+        vSeeds.push_back(CDNSSeedData("b2.earlz.net", "b2.earlz.net"));
+
 
 
         // Workaround for Boost not being quite compatible with C++11;
-        std::vector<unsigned char> pka = list_of(36);
+        std::vector<unsigned char> pka = list_of(18);
         base58Prefixes[PUBKEY_ADDRESS] = pka;
         
-        std::vector<unsigned char> sca = list_of(20);
+        std::vector<unsigned char> sca = list_of(142);
         base58Prefixes[SCRIPT_ADDRESS] = sca;
-        //SENDALERT: note, to use sendalert with WIF compressed, change to list_of(128) (here and for testnet as well)
-        std::vector<unsigned char> sk  = list_of(125);
+
+        std::vector<unsigned char> sk  = list_of(128);
         base58Prefixes[SECRET_KEY]     = sk;
         
         std::vector<unsigned char> epk = list_of(0x04)(0x88)(0xC4)(0x2E);
@@ -134,6 +121,7 @@ assert(genesis.GetHash() == uint256("0x00000ebcecd9c5bec0311d97f997d09c887b69521
         
         std::vector<unsigned char> esk = list_of(0x04)(0x88)(0xE1)(0xF4);
         base58Prefixes[EXT_SECRET_KEY] = esk;
+
 
         // Convert the pnSeeds array into usable address objects.
         for (unsigned int i = 0; i < ARRAYLEN(pnSeed); i++)
@@ -183,12 +171,11 @@ public:
         strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start so that they don't match
+genesis.nTime = 1411271251;
+genesis.nNonce = 3104672;
+assert(genesis.hashMerkleRoot == uint256("0x7fe1914ce8ec112ed706ac0c1ace60c6a1c3c238293d94256b2083d8e8729f21"));
+assert(genesis.GetHash() == uint256("0x000004efe814da21375f126687fafe1fac5b2160df08741cd139ddd7af26b4b8"));
 
-        genesis.nTime = 1411022846;
-genesis.nNonce = 592527;
-        hashGenesisBlock = genesis.GetHash();
-assert(genesis.hashMerkleRoot == uint256("0x174e2f91a7f6e3a4596df7f48a4744de494dcfffee00a652274f4049eac4b7c0"));
-assert(genesis.GetHash() == uint256("0x000003030c996912d1d5d0b47f41ab2316da31cea8e15b5c44226aaf76ab351f"));
 
         if (false) 
         {
@@ -223,26 +210,10 @@ assert(genesis.GetHash() == uint256("0x000003030c996912d1d5d0b47f41ab2316da31cea
             exit(1);
         }
 
+        hashGenesisBlock = genesis.GetHash();
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("testnet.bitchcoin.net", "testnet.bitchcoin.net"));
         vSeeds.push_back(CDNSSeedData("earlz.net", "earlz.net"));
-        vSeeds.push_back(CDNSSeedData("seed1.bitchcoin.net", "seed1.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed2.bitchcoin.net", "seed2.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed3.bitchcoin.net", "seed3.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed4.bitchcoin.net", "seed4.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed5.bitchcoin.net", "seed5.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed6.bitchcoin.net", "seed6.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed7.bitchcoin.net", "seed7.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed8.bitchcoin.net", "seed8.bitchcoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed1.fractalco.in", "seed1.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed2.fractalco.in", "seed2.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed3.fractalco.in", "seed3.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed4.fractalco.in", "seed4.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed5.fractalco.in", "seed5.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed6.fractalco.in", "seed6.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed7.fractalco.in", "seed7.fractalco.in"));
-        vSeeds.push_back(CDNSSeedData("seed8.fractalco.in", "seed8.fractalco.in"));
 
         // Boost sucks, and should not be used. Workaround for Boost not being compatible with C++11;
         
