@@ -22,7 +22,7 @@ void BitcoinUnitsTests::parseTests()
     QCOMPARE(value, 100000000000LL);
     QVERIFY(BitcoinUnits::parse(BitcoinUnits::ENVY, "1,000,000.0", &value, locale1));
     QCOMPARE(value, 100000000000000LL);
-    QVERIFY(BitcoinUnits::parse(BitcoinUnits::Cunt, "1,000,000,000", &value, locale1));
+    QVERIFY(BitcoinUnits::parse(BitcoinUnits::uENVY, "1,000,000,000", &value, locale1));
     QCOMPARE(value, 1000000000LL);
     QVERIFY(BitcoinUnits::parse(BitcoinUnits::kENVY, "1.0", &value, locale1));
     QCOMPARE(value, 100000000000LL);
@@ -57,7 +57,7 @@ void BitcoinUnitsTests::parseTests()
     QCOMPARE(value, 100000000LL);
     QVERIFY(BitcoinUnits::parse(BitcoinUnits::ENVY, "1,0", &value, locale2));
     QCOMPARE(value, 100000000LL);
-    QVERIFY(BitcoinUnits::parse(BitcoinUnits::Cunt, "1.000.000", &value, locale2));
+    QVERIFY(BitcoinUnits::parse(BitcoinUnits::uENVY, "1.000.000", &value, locale2));
     QCOMPARE(value, 1000000LL);
     // Fail: multiple decimal separators
     QVERIFY(!BitcoinUnits::parse(BitcoinUnits::ENVY, "0,000,000", &value, locale2));
@@ -78,7 +78,7 @@ void BitcoinUnitsTests::parseTests()
     QVERIFY(!BitcoinUnits::parse(BitcoinUnits::ENVY, "1,000.00", &value, locale4));
     // Fail: too many decimals
     QVERIFY(!BitcoinUnits::parse(BitcoinUnits::ENVY, "1000.000000000", &value, locale4));
-    QVERIFY(!BitcoinUnits::parse(BitcoinUnits::Cunt, "1.0", &value, locale4));
+    QVERIFY(!BitcoinUnits::parse(BitcoinUnits::uENVY, "1.0", &value, locale4));
     //no overflow because Envycoin has unlimited money supply
     /*// Fail: overflow
     QVERIFY(!BitcoinUnits::parse(BitcoinUnits::ENVY, "10000000000.1", &value, locale4));
@@ -97,10 +97,10 @@ void BitcoinUnitsTests::formatTests()
     QCOMPARE(BitcoinUnits::format(BitcoinUnits::ENVY, 0, false, true, locale1), QString("0.00"));
     QCOMPARE(BitcoinUnits::format(BitcoinUnits::kENVY, 0, false, false, locale1), QString("0.00000000000"));
     QCOMPARE(BitcoinUnits::format(BitcoinUnits::MENVY, 0, false, false, locale1), QString("0.00000000000000"));
-    QCOMPARE(BitcoinUnits::format(BitcoinUnits::Cunt, 0, false, false, locale1), QString("0.0"));
+    QCOMPARE(BitcoinUnits::format(BitcoinUnits::uENVY, 0, false, false, locale1), QString("0.0"));
     QCOMPARE(BitcoinUnits::format(BitcoinUnits::ENVY, 0, true, false, locale1), QString("+0.00000000"));
-    QCOMPARE(BitcoinUnits::format(BitcoinUnits::Cunt, 100000000, false, true, locale1), QString("100,000,000.0"));
-    QCOMPARE(BitcoinUnits::format(BitcoinUnits::Cunt, 100000000, true, true, locale1), QString("+100,000,000.0"));
+    QCOMPARE(BitcoinUnits::format(BitcoinUnits::uENVY, 100000000, false, true, locale1), QString("100,000,000.0"));
+    QCOMPARE(BitcoinUnits::format(BitcoinUnits::uENVY, 100000000, true, true, locale1), QString("+100,000,000.0"));
 
     QCOMPARE(BitcoinUnits::formatWithUnit(BitcoinUnits::ENVY, 100000000000000LL, false, true, locale1), QString("1,000,000.00 ENVY"));
     QCOMPARE(BitcoinUnits::formatWithUnit(BitcoinUnits::kENVY, 100000000000000LL, false, true, locale1), QString("1,000.00 kENVY"));

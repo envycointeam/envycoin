@@ -19,7 +19,7 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
     unitlist.append(MENVY);
     unitlist.append(kENVY);
     unitlist.append(ENVY);
-    unitlist.append(Cunt);
+    unitlist.append(uENVY);
     return unitlist;
 }
 
@@ -30,7 +30,7 @@ bool BitcoinUnits::valid(int unit)
     case MENVY:
     case kENVY:
     case ENVY:
-    case Cunt:
+    case uENVY:
         return true;
     default:
         return false;
@@ -44,7 +44,7 @@ QString BitcoinUnits::name(int unit)
     case MENVY: return QString("MENVY");
     case kENVY: return QString("kENVY");
     case ENVY: return QString("ENVY");
-    case Cunt: return QString("Cunt");
+    case uENVY: return QString("uENVY");
     default: return QString("???");
     }
 }
@@ -56,7 +56,7 @@ QString BitcoinUnits::description(int unit)
     case MENVY: return QString("Mega-Envycoin (1,000,000 ENVY)");
     case kENVY: return QString("Kilo-Envycoin (1000 ENVY)");
     case ENVY: return QString("Envycoin");
-    case Cunt: return QString("Cunt (1 / 100,000,000");
+    case uENVY: return QString("uENVY (1 / 100,000,000");
     default: return QString("???");
     }
 }
@@ -68,7 +68,7 @@ qint64 BitcoinUnits::factor(int unit)
     case MENVY: return Q_INT64_C(100000000000000);
     case kENVY: return Q_INT64_C(100000000000);
     case ENVY:  return Q_INT64_C(100000000);
-    case Cunt: return Q_INT64_C(1);
+    case uENVY: return Q_INT64_C(1);
     default:    return Q_INT64_C(100000000);
     }
 }
@@ -80,7 +80,7 @@ qint64 BitcoinUnits::maxAmount(int unit)
     case MENVY: return Q_INT64_C(900000);
     case kENVY: return Q_INT64_C(900000000);
     case ENVY:  return Q_INT64_C(900000000000);    //less than the coin supply until the year 2170
-    case Cunt: return Q_INT64_C(9000000000000000000); // Slightly under max value for int64
+    case uENVY: return Q_INT64_C(9000000000000000000); // Slightly under max value for int64
     default:   return 0;
     }
 }
@@ -92,7 +92,7 @@ int BitcoinUnits::amountDigits(int unit)
     case MENVY: return 6;  // 900,000 (# digits, without commas)
     case kENVY: return 9;  // 900,000,000
     case ENVY:  return 12; // 900,000,000,000
-    case Cunt: return 19; // 9,000,000,000,000,000,000
+    case uENVY: return 19; // 9,000,000,000,000,000,000
     default: return 0;
     }
 }
@@ -104,7 +104,7 @@ int BitcoinUnits::decimals(int unit)
     case MENVY: return 14;
     case kENVY: return 11;
     case ENVY: return 8;
-    case Cunt: return 0;
+    case uENVY: return 0;
     default: return 0;
     }
 }

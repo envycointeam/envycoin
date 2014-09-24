@@ -26,10 +26,10 @@ public:
     {
         ENVY,
         //formerly mENVY
-        //formerly Cunt
+        //formerly uENVY
         MENVY = 3,
         kENVY = 4,
-        Cunt = 5
+        uENVY = 5
     };
 
     //! @name Static API
