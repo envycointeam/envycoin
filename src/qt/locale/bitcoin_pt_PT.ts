@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Bitchcoin Core</source>
-        <translation>Sobre o Núcleo Bitchcoin</translation>
+        <source>About Envycoin Core</source>
+        <translation>Sobre o Núcleo Envycoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Bitchcoin Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Bitchcoin Core&lt;/b&gt; versão</translation>
+        <source>&lt;b&gt;Envycoin Core&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Envycoin Core&lt;/b&gt; versão</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -33,8 +33,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+0"/>
-        <source>The Bitchcoin Core developers</source>
-        <translation>Os programadores Bitchcoin</translation>
+        <source>The Envycoin Core developers</source>
+        <translation>Os programadores Envycoin</translation>
     </message>
 </context>
 <context>
@@ -121,13 +121,13 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Bitchcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estes são os seus endereços Bitchcoin para enviar pagamentos. Verifique sempre o valor e a morada de envio antes de enviar moedas.</translation>
+        <source>These are your Envycoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estes são os seus endereços Envycoin para enviar pagamentos. Verifique sempre o valor e a morada de envio antes de enviar moedas.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Bitchcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estes são os seus endereços Bitchcoin para receber pagamentos. É recomendado que utilize um endereço novo para cada transacção.</translation>
+        <source>These are your Envycoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estes são os seus endereços Envycoin para receber pagamentos. É recomendado que utilize um endereço novo para cada transacção.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -247,8 +247,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BTCHCOINS&lt;/b&gt;!</source>
-        <translation>Atenção: Se encriptar a carteira e perder a sua senha irá &lt;b&gt;PERDER TODOS OS SEUS BTCHCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ENVYCOINS&lt;/b&gt;!</source>
+        <translation>Atenção: Se encriptar a carteira e perder a sua senha irá &lt;b&gt;PERDER TODOS OS SEUS ENVYCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -274,8 +274,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="-56"/>
-        <source>Bitchcoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Bitchcoins from being stolen by malware infecting your computer.</source>
-        <translation>O cliente Bitchcoin irá agora ser fechado para terminar o processo de encriptação. Recorde que a encriptação da sua carteira não protegerá totalmente os seus bitchcoins de serem roubados por programas maliciosos que infectem o seu computador.</translation>
+        <source>Envycoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Envycoins from being stolen by malware infecting your computer.</source>
+        <translation>O cliente Envycoin irá agora ser fechado para terminar o processo de encriptação. Recorde que a encriptação da sua carteira não protegerá totalmente os seus envycoins de serem roubados por programas maliciosos que infectem o seu computador.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -368,8 +368,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Bitchcoin Core</source>
-        <translation>Mostrar informação sobre Bitchcoin</translation>
+        <source>Show information about Envycoin Core</source>
+        <translation>Mostrar informação sobre Envycoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -429,13 +429,13 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="-405"/>
-        <source>Send coins to a Bitchcoin address</source>
-        <translation>Enviar moedas para um endereço bitchcoin</translation>
+        <source>Send coins to a Envycoin address</source>
+        <translation>Enviar moedas para um endereço envycoin</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Bitchcoin Core</source>
-        <translation>Modificar opções de configuração para bitchcoin</translation>
+        <source>Modify configuration options for Envycoin Core</source>
+        <translation>Modificar opções de configuração para envycoin</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -464,8 +464,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+430"/>
-        <source>Bitchcoin</source>
-        <translation>Bitchcoin</translation>
+        <source>Envycoin</source>
+        <translation>Envycoin</translation>
     </message>
     <message>
         <location line="-643"/>
@@ -500,13 +500,13 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Bitchcoin addresses to prove you own them</source>
-        <translation>Assine mensagens com os seus endereços Bitchcoin para provar que os controla</translation>
+        <source>Sign messages with your Envycoin addresses to prove you own them</source>
+        <translation>Assine mensagens com os seus endereços Envycoin para provar que os controla</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Bitchcoin addresses</source>
-        <translation>Verifique mensagens para assegurar que foram assinadas com o endereço Bitchcoin especificado</translation>
+        <source>Verify messages to ensure they were signed with specified Envycoin addresses</source>
+        <translation>Verifique mensagens para assegurar que foram assinadas com o endereço Envycoin especificado</translation>
     </message>
     <message>
         <location line="+48"/>
@@ -536,19 +536,19 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="-401"/>
-        <source>Bitchcoin Core</source>
-        <translation>Núcleo Bitchcoin</translation>
+        <source>Envycoin Core</source>
+        <translation>Núcleo Envycoin</translation>
     </message>
     <message>
         <location line="+163"/>
-        <source>Request payments (generates QR codes and bitchcoin: URIs)</source>
+        <source>Request payments (generates QR codes and envycoin: URIs)</source>
         <translation>Solicitar pagamentos (gera códigos QR)</translation>
     </message>
     <message>
         <location line="+29"/>
         <location line="+2"/>
-        <source>&amp;About Bitchcoin Core</source>
-        <translation>&amp;Sobre o Núcleo Bitchcoin</translation>
+        <source>&amp;About Envycoin Core</source>
+        <translation>&amp;Sobre o Núcleo Envycoin</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -562,8 +562,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a bitchcoin: URI or payment request</source>
-        <translation>Abrir bitchcoin: link ou pedido de pagamento</translation>
+        <source>Open a envycoin: URI or payment request</source>
+        <translation>Abrir envycoin: link ou pedido de pagamento</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -572,19 +572,19 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the Bitchcoin Core help message to get a list with possible Bitchcoin Core command-line options</source>
+        <source>Show the Envycoin Core help message to get a list with possible Envycoin Core command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+159"/>
         <location line="+5"/>
-        <source>Bitchcoin client</source>
-        <translation>Cliente Bitchcoin</translation>
+        <source>Envycoin client</source>
+        <translation>Cliente Envycoin</translation>
     </message>
     <message numerus="yes">
         <location line="+142"/>
-        <source>%n active connection(s) to Bitchcoin network</source>
-        <translation><numerusform>%n ligação ativa à rede Bitchcoin</numerusform><numerusform>%n ligações ativas à rede Bitchcoin</numerusform></translation>
+        <source>%n active connection(s) to Envycoin network</source>
+        <translation><numerusform>%n ligação ativa à rede Envycoin</numerusform><numerusform>%n ligações ativas à rede Envycoin</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -691,8 +691,8 @@ Endereço: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+438"/>
-        <source>A fatal error occurred. Bitchcoin Core can no longer continue safely and will quit.</source>
-        <translation>Ocorreu um erro fatal. O Bitchcoin não pode continuar com segurança e irá fechar.</translation>
+        <source>A fatal error occurred. Envycoin Core can no longer continue safely and will quit.</source>
+        <translation>Ocorreu um erro fatal. O Envycoin não pode continuar com segurança e irá fechar.</translation>
     </message>
 </context>
 <context>
@@ -1049,8 +1049,8 @@ Endereço: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Bitchcoin address.</source>
-        <translation>O endereço introduzido &quot;%1&quot; não é um endereço bitchcoin válido.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Envycoin address.</source>
+        <translation>O endereço introduzido &quot;%1&quot; não é um endereço envycoin válido.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1095,13 +1095,13 @@ Endereço: %4
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../forms/helpmessagedialog.ui" line="+19"/>
-        <source>Bitchcoin Core - Command-line options</source>
+        <source>Envycoin Core - Command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="+38"/>
-        <source>Bitchcoin Core</source>
-        <translation>Núcleo Bitchcoin</translation>
+        <source>Envycoin Core</source>
+        <translation>Núcleo Envycoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1153,18 +1153,18 @@ Endereço: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Bitchcoin Core.</source>
-        <translation>Bem-vindo ao Bitchcoin Core.</translation>
+        <source>Welcome to Envycoin Core.</source>
+        <translation>Bem-vindo ao Envycoin Core.</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Bitchcoin Core will store its data.</source>
-        <translation>Sendo isto a primeira vez que o programa é iniciado, você pode escolher onde Bitchcoin Core vai guardar os seus dados.</translation>
+        <source>As this is the first time the program is launched, you can choose where Envycoin Core will store its data.</source>
+        <translation>Sendo isto a primeira vez que o programa é iniciado, você pode escolher onde Envycoin Core vai guardar os seus dados.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Bitchcoin Core will download and store a copy of the Bitchcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Bitchcoin Core vai transferir e guardar uma cópia do Bitchcoin &quot;block chain&quot; (cadeia de bloco). Pelo menos %1GB de dados será guardado neste directório, e vai crescer consoante o tempo.
+        <source>Envycoin Core will download and store a copy of the Envycoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Envycoin Core vai transferir e guardar uma cópia do Envycoin &quot;block chain&quot; (cadeia de bloco). Pelo menos %1GB de dados será guardado neste directório, e vai crescer consoante o tempo.
 A sua &quot;carteira&quot; também irá ser guardada neste directório.</translation>
     </message>
     <message>
@@ -1179,8 +1179,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location filename="../intro.cpp" line="+85"/>
-        <source>Bitchcoin</source>
-        <translation>Bitchcoin</translation>
+        <source>Envycoin</source>
+        <translation>Envycoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1255,13 +1255,13 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Bitchcoin Core after logging in to the system.</source>
-        <translation>Começar o Bitchcoin automaticamente ao iniciar sessão no sistema.</translation>
+        <source>Automatically start Envycoin Core after logging in to the system.</source>
+        <translation>Começar o Envycoin automaticamente ao iniciar sessão no sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Bitchcoin Core on system login</source>
-        <translation>&amp;Começar o Bitchcoin ao iniciar o sistema</translation>
+        <source>&amp;Start Envycoin Core on system login</source>
+        <translation>&amp;Começar o Envycoin ao iniciar o sistema</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1290,7 +1290,7 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+58"/>
-        <source>Connect to the Bitchcoin network through a SOCKS proxy.</source>
+        <source>Connect to the Envycoin network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1325,8 +1325,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Bitchcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir a porta do cliente bitchcoin automaticamente no seu router. Isto penas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
+        <source>Automatically open the Envycoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir a porta do cliente envycoin automaticamente no seu router. Isto penas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1395,8 +1395,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bitchcoin Core.</source>
-        <translation>A linguagem da interface do utilizador pode ser definida aqui. Esta definição entrará em efeito após reiniciar o Bitchcoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Envycoin Core.</source>
+        <translation>A linguagem da interface do utilizador pode ser definida aqui. Esta definição entrará em efeito após reiniciar o Envycoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1410,8 +1410,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Bitchcoin addresses in the transaction list or not.</source>
-        <translation>Se mostrar, ou não, os endereços Bitchcoin na lista de transações.</translation>
+        <source>Whether to show Envycoin addresses in the transaction list or not.</source>
+        <translation>Se mostrar, ou não, os endereços Envycoin na lista de transações.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1485,8 +1485,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     <message>
         <location line="+50"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitchcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada poderá estar desatualizada. A sua carteira sincroniza automaticamente com a rede Bitchcoin depois de estabelecer ligação, mas este processo ainda não está completo.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Envycoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada poderá estar desatualizada. A sua carteira sincroniza automaticamente com a rede Envycoin depois de estabelecer ligação, mas este processo ainda não está completo.</translation>
     </message>
     <message>
         <location line="-155"/>
@@ -1555,8 +1555,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Bitchcoin address or malformed URI parameters.</source>
-        <translation>URI não foi lido correctamente! Isto pode ser causado por um endereço Bitchcoin inválido ou por parâmetros URI malformados.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Envycoin address or malformed URI parameters.</source>
+        <translation>URI não foi lido correctamente! Isto pode ser causado por um endereço Envycoin inválido ou por parâmetros URI malformados.</translation>
     </message>
     <message>
         <location line="+96"/>
@@ -1575,8 +1575,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="-353"/>
-        <source>Cannot start bitchcoin: click-to-pay handler</source>
-        <translation>Impossível começar o modo clicar-para-pagar com bitchcoin:</translation>
+        <source>Cannot start envycoin: click-to-pay handler</source>
+        <translation>Impossível começar o modo clicar-para-pagar com envycoin:</translation>
     </message>
     <message>
         <location line="+58"/>
@@ -1644,8 +1644,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     <message>
         <location filename="../bitcoin.cpp" line="+71"/>
         <location line="+11"/>
-        <source>Bitchcoin</source>
-        <translation>Bitchcoin</translation>
+        <source>Envycoin</source>
+        <translation>Envycoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1815,7 +1815,7 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Bitchcoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Envycoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Abrir o ficheiro de registo de depuração da pasta de dados actual. Isto pode demorar alguns segundos para ficheiros de registo maiores.</translation>
     </message>
     <message>
@@ -1825,8 +1825,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Bitchcoin Core RPC console.</source>
-        <translation>Bem-vindo à consola RPC Bitchcoin.</translation>
+        <source>Welcome to the Envycoin Core RPC console.</source>
+        <translation>Bem-vindo à consola RPC Envycoin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1908,7 +1908,7 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+7"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitchcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Envycoin network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2192,8 +2192,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="-136"/>
-        <source>Enter a Bitchcoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Introduza um endereço Bitchcoin (p.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+        <source>Enter a Envycoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Introduza um endereço Envycoin (p.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -2282,8 +2282,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+112"/>
-        <source>Warning: Invalid Bitchcoin address</source>
-        <translation>Aviso: Endereço Bitchcoin inválido</translation>
+        <source>Warning: Invalid Envycoin address</source>
+        <translation>Aviso: Endereço Envycoin inválido</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -2384,7 +2384,7 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the Bitchcoin URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitchcoin network.</source>
+        <source>A message that was attached to the Envycoin URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Envycoin network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2416,15 +2416,15 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Bitchcoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Introduza um endereço Bitchcoin (p.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+        <source>Enter a Envycoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Introduza um endereço Envycoin (p.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
 </context>
 <context>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+48"/>
-        <source>Bitchcoin Core is shutting down...</source>
+        <source>Envycoin Core is shutting down...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2494,8 +2494,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Bitchcoin address</source>
-        <translation>Assine uma mensagem para provar que é dono deste endereço Bitchcoin</translation>
+        <source>Sign the message to prove you own this Envycoin address</source>
+        <translation>Assine uma mensagem para provar que é dono deste endereço Envycoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2530,8 +2530,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Bitchcoin address</source>
-        <translation>Verifique a mensagem para assegurar que foi assinada com o endereço Bitchcoin especificado</translation>
+        <source>Verify the message to ensure it was signed with the specified Envycoin address</source>
+        <translation>Verifique a mensagem para assegurar que foi assinada com o endereço Envycoin especificado</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2546,8 +2546,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+29"/>
         <location line="+3"/>
-        <source>Enter a Bitchcoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Introduza um endereço Bitchcoin (p.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+        <source>Enter a Envycoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Introduza um endereço Envycoin (p.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2556,8 +2556,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Bitchcoin signature</source>
-        <translation>Introduza assinatura Bitchcoin</translation>
+        <source>Enter Envycoin signature</source>
+        <translation>Introduza assinatura Envycoin</translation>
     </message>
     <message>
         <location line="+84"/>
@@ -2630,13 +2630,13 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+28"/>
-        <source>Bitchcoin Core</source>
-        <translation>Núcleo Bitchcoin</translation>
+        <source>Envycoin Core</source>
+        <translation>Núcleo Envycoin</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>The Bitchcoin Core developers</source>
-        <translation>Os programadores Bitchcoin</translation>
+        <source>The Envycoin Core developers</source>
+        <translation>Os programadores Envycoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3203,7 +3203,7 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
 </context>
 <context>
-    <name>bitchcoin-core</name>
+    <name>envycoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+221"/>
         <source>Usage:</source>
@@ -3226,13 +3226,13 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+22"/>
-        <source>Specify configuration file (default: bitchcoin.conf)</source>
-        <translation>Especificar ficheiro de configuração (por defeito: bitchcoin.conf)</translation>
+        <source>Specify configuration file (default: envycoin.conf)</source>
+        <translation>Especificar ficheiro de configuração (por defeito: envycoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: bitchcoind.pid)</source>
-        <translation>Especificar ficheiro pid (por defeito: bitchcoind.pid)</translation>
+        <source>Specify pid file (default: envycoind.pid)</source>
+        <translation>Especificar ficheiro pid (por defeito: envycoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -3309,24 +3309,24 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=bitchcoinrpc
+rpcuser=envycoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Bitchcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Envycoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, deverá definir rpcpassword no ficheiro de configuração :
  %s
 É recomendado que use a seguinte palavra-passe aleatória:
-rpcuser=bitchcoinrpc
+rpcuser=envycoinrpc
 rpcpassword=%s
 (não precisa recordar esta palavra-passe)
 O nome de utilizador e password NÃO DEVEM ser iguais.
 Se o ficheiro não existir, crie-o com permissões de leitura apenas para o dono.
 Também é recomendado definir alertnotify para que seja alertado sobre problemas;
-por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Bitchcoin&quot; admin@foo.com
+por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Envycoin&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3346,8 +3346,8 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Bitchcoin&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Bitchcoin Core is probably already running.</source>
-        <translation>Impossível trancar a pasta de dados %s.  Provavelmente o Bitchcoin já está a ser executado.</translation>
+        <source>Cannot obtain a lock on data directory %s. Envycoin Core is probably already running.</source>
+        <translation>Impossível trancar a pasta de dados %s.  Provavelmente o Envycoin já está a ser executado.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3391,13 +3391,13 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Bitchcoin&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitchcoin Core will not work properly.</source>
-        <translation>Atenção: Por favor verifique que a data e hora do seu computador estão correctas! Se o seu relógio não estiver certo o Bitchcoin não irá funcionar correctamente.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Envycoin Core will not work properly.</source>
+        <translation>Atenção: Por favor verifique que a data e hora do seu computador estão correctas! Se o seu relógio não estiver certo o Envycoin não irá funcionar correctamente.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Aviso: A rede não parece estar completamente funcional! Parece que alguns bitchcoiner&apos;s estão com dificuldades técnicas.</translation>
+        <translation>Aviso: A rede não parece estar completamente funcional! Parece que alguns envycoiner&apos;s estão com dificuldades técnicas.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3426,13 +3426,13 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Bitchcoin&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Bitchcoin Core Daemon</source>
-        <translation>Bitchcoin Core Daemon</translation>
+        <source>Envycoin Core Daemon</source>
+        <translation>Envycoin Core Daemon</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Bitchcoin Core RPC client version</source>
-        <translation>Versão do cliente Bitchcoin RPC</translation>
+        <source>Envycoin Core RPC client version</source>
+        <translation>Versão do cliente Envycoin RPC</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3631,8 +3631,8 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Bitchcoin&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to Bitchcoin Core server</source>
-        <translation>Enviar comando para servidor Bitchcoin</translation>
+        <source>Send command to Envycoin Core server</source>
+        <translation>Enviar comando para servidor Envycoin</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3651,8 +3651,8 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Bitchcoin&quot; admin@f
     </message>
     <message>
         <location line="+2"/>
-        <source>Start Bitchcoin Core server</source>
-        <translation>Começar servidor Bitchcoin</translation>
+        <source>Start Envycoin Core server</source>
+        <translation>Começar servidor Envycoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3661,8 +3661,8 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Bitchcoin&quot; admin@f
     </message>
     <message>
         <location line="+10"/>
-        <source>Usage (deprecated, use bitchcoin-cli):</source>
-        <translation>Utilização (deprecado, use bitchcoin-cli)</translation>
+        <source>Usage (deprecated, use envycoin-cli):</source>
+        <translation>Utilização (deprecado, use envycoin-cli)</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3926,13 +3926,13 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Bitchcoin&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitchcoin Core</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma versão mais recente do Bitchcoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Envycoin Core</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma versão mais recente do Envycoin</translation>
     </message>
     <message>
         <location line="+98"/>
-        <source>Wallet needed to be rewritten: restart Bitchcoin Core to complete</source>
-        <translation>A Carteira precisou ser reescrita: reinicie o Bitchcoin para completar</translation>
+        <source>Wallet needed to be rewritten: restart Envycoin Core to complete</source>
+        <translation>A Carteira precisou ser reescrita: reinicie o Envycoin para completar</translation>
     </message>
     <message>
         <location line="-100"/>
@@ -3991,8 +3991,8 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Bitchcoin&quot; admin@f
     </message>
     <message>
         <location line="-32"/>
-        <source>Unable to bind to %s on this computer. Bitchcoin Core is probably already running.</source>
-        <translation>Incapaz de vincular à porta %s neste computador.  Provavelmente o Bitchcoin já está a funcionar.</translation>
+        <source>Unable to bind to %s on this computer. Envycoin Core is probably already running.</source>
+        <translation>Incapaz de vincular à porta %s neste computador.  Provavelmente o Envycoin já está a funcionar.</translation>
     </message>
     <message>
         <location line="+95"/>

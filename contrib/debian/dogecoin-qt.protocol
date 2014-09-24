@@ -1,6 +1,6 @@
 [Protocol]
-exec=bitchcoin-qt '%u'
-protocol=bitchcoin
+exec=envycoin-qt '%u'
+protocol=envycoin
 input=none
 output=none
 helper=true

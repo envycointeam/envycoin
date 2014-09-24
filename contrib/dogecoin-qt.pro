@@ -18,7 +18,7 @@ FORMS += \
     ../src/qt/forms/transactiondescdialog.ui \
 
 RESOURCES += \
-    ../src/qt/bitchcoin.qrc
+    ../src/qt/envycoin.qrc
 
 HEADERS += \
     ../src/json/json_spirit.h \
@@ -346,7 +346,7 @@ SOURCES += \
     ../src/qt/paymentrequest.pb.cc \
     ../src/qt/paymentrequestplus.cpp \
     ../src/qt/paymentserver.cpp \
-    ../src/qt/qrc_bitchcoin.cpp \
+    ../src/qt/qrc_envycoin.cpp \
     ../src/qt/qvalidatedlineedit.cpp \
     ../src/qt/qvaluecombobox.cpp \
     ../src/qt/receivecoinsdialog.cpp \
@@ -401,7 +401,7 @@ SOURCES += \
     ../src/test/serialize_tests.cpp \
     ../src/test/sighash_tests.cpp \
     ../src/test/sigopcount_tests.cpp \
-    ../src/test/test_bitchcoin.cpp \
+    ../src/test/test_envycoin.cpp \
     ../src/test/transaction_tests.cpp \
     ../src/test/uint256_tests.cpp \
     ../src/test/util_tests.cpp \
@@ -416,8 +416,8 @@ SOURCES += \
     ../src/core.cpp \
     ../src/crypter.cpp \
     ../src/db.cpp \
-    ../src/bitchcoin-cli.cpp \
-    ../src/bitchcoind.cpp \
+    ../src/envycoin-cli.cpp \
+    ../src/envycoind.cpp \
     ../src/hash.cpp \
     ../src/init.cpp \
     ../src/key.cpp \

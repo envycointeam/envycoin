@@ -79,7 +79,7 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 
     widget->setFont(bitcoinAddressFont());
 #if QT_VERSION >= 0x040700
-    widget->setPlaceholderText(QObject::tr("Enter a Bitchcoin address (e.g. FJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)"));
+    widget->setPlaceholderText(QObject::tr("Enter a Envycoin address (e.g. FJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)"));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
@@ -96,8 +96,8 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no bitchcoin: URI
-    if(!uri.isValid() || uri.scheme() != QString("bitchcoin"))
+    // return if URI is not valid or is no envycoin: URI
+    if(!uri.isValid() || uri.scheme() != QString("envycoin"))
         return false;
 
     SendCoinsRecipient rv;
@@ -136,7 +136,7 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
                 // Parse amount in C locale with no number separators
                 QLocale locale(QLocale::c());
                 locale.setNumberOptions(QLocale::OmitGroupSeparator | QLocale::RejectGroupSeparator);
-                if(!BitcoinUnits::parse(BitcoinUnits::BTCH, i->second, &rv.amount, locale))
+                if(!BitcoinUnits::parse(BitcoinUnits::ENVY, i->second, &rv.amount, locale))
                 {
                     return false;
                 }
@@ -156,13 +156,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert bitchcoin:// to bitchcoin:
+    // Convert envycoin:// to envycoin:
     //
-    //    Cannot handle this later, because bitchcoin:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because envycoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("bitchcoin://", Qt::CaseInsensitive))
+    if(uri.startsWith("envycoin://", Qt::CaseInsensitive))
     {
-        uri.replace(0, 11, "bitchcoin:");
+        uri.replace(0, 11, "envycoin:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -170,14 +170,14 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("bitchcoin:%1").arg(info.address);
+    QString ret = QString("envycoin:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
     {
         QLocale localeC(QLocale::c());
         localeC.setNumberOptions(QLocale::OmitGroupSeparator | QLocale::RejectGroupSeparator);
-        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::BTCH, info.amount, false, true, localeC));
+        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::ENVY, info.amount, false, true, localeC));
         paramCount++;
     }
 
@@ -387,12 +387,12 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "Bitchcoin.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Envycoin.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for Bitchcoin.lnk
+    // check for Envycoin.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -469,7 +469,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "bitchcoin.desktop";
+    return GetAutostartDir() / "envycoin.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -510,7 +510,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a bitcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=Bitchcoin\n";
+        optionFile << "Name=Envycoin\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

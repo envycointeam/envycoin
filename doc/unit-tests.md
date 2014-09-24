@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the bitchcoind tests manually, launch src/test/test_bitcoin .
+To run the envycoind tests manually, launch src/test/test_bitcoin .
 
-To add more bitchcoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more envycoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the bitchcoin-qt tests manually, launch src/qt/test/bitcoin-qt_test
+To run the envycoin-qt tests manually, launch src/qt/test/bitcoin-qt_test
 
-To add more bitchcoin-qt tests, add them to the `src/qt/test/` directory and
+To add more envycoin-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

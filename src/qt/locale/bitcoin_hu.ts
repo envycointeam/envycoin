@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Bitchcoin Core</source>
-        <translation>A Bitchcoinról</translation>
+        <source>About Envycoin Core</source>
+        <translation>A Envycoinról</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Bitchcoin Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Bitchcoin&lt;/b&gt; verzió</translation>
+        <source>&lt;b&gt;Envycoin Core&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Envycoin&lt;/b&gt; verzió</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -32,7 +32,7 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+0"/>
-        <source>The Bitchcoin Core developers</source>
+        <source>The Envycoin Core developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -120,12 +120,12 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Bitchcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Envycoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Bitchcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Envycoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -246,8 +246,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BTCHCOINS&lt;/b&gt;!</source>
-        <translation>Figyelem: Ha kódolod a tárcát, és elveszíted a jelszavad, akkor &lt;b&gt;AZ ÖSSZES BTCHCOINODAT IS EL FOGOD VESZÍTENI!&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ENVYCOINS&lt;/b&gt;!</source>
+        <translation>Figyelem: Ha kódolod a tárcát, és elveszíted a jelszavad, akkor &lt;b&gt;AZ ÖSSZES ENVYCOINODAT IS EL FOGOD VESZÍTENI!&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -273,8 +273,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="-56"/>
-        <source>Bitchcoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Bitchcoins from being stolen by malware infecting your computer.</source>
-        <translation>Bitchcoin Core will close now to finish the encryption process. Ne feledd, hogy a tárca titkosítása sem nyújt teljes védelmet az adathalász programok fertőzésével szemben.</translation>
+        <source>Envycoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Envycoins from being stolen by malware infecting your computer.</source>
+        <translation>Envycoin Core will close now to finish the encryption process. Ne feledd, hogy a tárca titkosítása sem nyújt teljes védelmet az adathalász programok fertőzésével szemben.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -367,8 +367,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Bitchcoin Core</source>
-        <translation>Információk a Bitchcoinról</translation>
+        <source>Show information about Envycoin Core</source>
+        <translation>Információk a Envycoinról</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -428,13 +428,13 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="-405"/>
-        <source>Send coins to a Bitchcoin address</source>
+        <source>Send coins to a Envycoin address</source>
         <translation>Érmék küldése megadott címre</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Bitchcoin Core</source>
-        <translation>Bitchcoin konfigurációs opciók</translation>
+        <source>Modify configuration options for Envycoin Core</source>
+        <translation>Envycoin konfigurációs opciók</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -463,8 +463,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+430"/>
-        <source>Bitchcoin</source>
-        <translation>Bitchcoin</translation>
+        <source>Envycoin</source>
+        <translation>Envycoin</translation>
     </message>
     <message>
         <location line="-643"/>
@@ -499,13 +499,13 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Bitchcoin addresses to prove you own them</source>
-        <translation>Üzenet aláírása a Bitchcoin címmel, amivel bizonyítja, hogy a cím az ön tulajdona.</translation>
+        <source>Sign messages with your Envycoin addresses to prove you own them</source>
+        <translation>Üzenet aláírása a Envycoin címmel, amivel bizonyítja, hogy a cím az ön tulajdona.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Bitchcoin addresses</source>
-        <translation>Annak ellenőrzése, hogy az üzenetek valóban a megjelölt Bitchcoin címekkel vannak-e alaírva</translation>
+        <source>Verify messages to ensure they were signed with specified Envycoin addresses</source>
+        <translation>Annak ellenőrzése, hogy az üzenetek valóban a megjelölt Envycoin címekkel vannak-e alaírva</translation>
     </message>
     <message>
         <location line="+48"/>
@@ -535,18 +535,18 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="-401"/>
-        <source>Bitchcoin Core</source>
-        <translation>Bitchcoin Core</translation>
+        <source>Envycoin Core</source>
+        <translation>Envycoin Core</translation>
     </message>
     <message>
         <location line="+163"/>
-        <source>Request payments (generates QR codes and bitchcoin: URIs)</source>
+        <source>Request payments (generates QR codes and envycoin: URIs)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+29"/>
         <location line="+2"/>
-        <source>&amp;About Bitchcoin Core</source>
+        <source>&amp;About Envycoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -561,7 +561,7 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a bitchcoin: URI or payment request</source>
+        <source>Open a envycoin: URI or payment request</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -571,19 +571,19 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the Bitchcoin Core help message to get a list with possible Bitchcoin Core command-line options</source>
+        <source>Show the Envycoin Core help message to get a list with possible Envycoin Core command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+159"/>
         <location line="+5"/>
-        <source>Bitchcoin client</source>
-        <translation>Bitchcoin kliens</translation>
+        <source>Envycoin client</source>
+        <translation>Envycoin kliens</translation>
     </message>
     <message numerus="yes">
         <location line="+142"/>
-        <source>%n active connection(s) to Bitchcoin network</source>
-        <translation><numerusform>%n aktív kapcsolat a Bitchcoin-hálózattal</numerusform><numerusform>%n aktív kapcsolat a Bitchcoin-hálózattal</numerusform></translation>
+        <source>%n active connection(s) to Envycoin network</source>
+        <translation><numerusform>%n aktív kapcsolat a Envycoin-hálózattal</numerusform><numerusform>%n aktív kapcsolat a Envycoin-hálózattal</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -690,7 +690,7 @@ Cím: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+438"/>
-        <source>A fatal error occurred. Bitchcoin Core can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Envycoin Core can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1048,8 +1048,8 @@ Cím: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Bitchcoin address.</source>
-        <translation>A megadott &quot;%1&quot; cím nem egy érvényes Bitchcoin-cím.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Envycoin address.</source>
+        <translation>A megadott &quot;%1&quot; cím nem egy érvényes Envycoin-cím.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1094,13 +1094,13 @@ Cím: %4
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../forms/helpmessagedialog.ui" line="+19"/>
-        <source>Bitchcoin Core - Command-line options</source>
+        <source>Envycoin Core - Command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="+38"/>
-        <source>Bitchcoin Core</source>
-        <translation>Bitchcoin Core</translation>
+        <source>Envycoin Core</source>
+        <translation>Envycoin Core</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1153,17 +1153,17 @@ Cím: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Bitchcoin Core.</source>
+        <source>Welcome to Envycoin Core.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Bitchcoin Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Envycoin Core will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+10"/>
-        <source>Bitchcoin Core will download and store a copy of the Bitchcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Envycoin Core will download and store a copy of the Envycoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1178,8 +1178,8 @@ Cím: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+85"/>
-        <source>Bitchcoin</source>
-        <translation>Bitchcoin</translation>
+        <source>Envycoin</source>
+        <translation>Envycoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1254,12 +1254,12 @@ Cím: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Bitchcoin Core after logging in to the system.</source>
-        <translation>Induljon el a Bitchcoin a számítógép bekapcsolásakor</translation>
+        <source>Automatically start Envycoin Core after logging in to the system.</source>
+        <translation>Induljon el a Envycoin a számítógép bekapcsolásakor</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Bitchcoin Core on system login</source>
+        <source>&amp;Start Envycoin Core on system login</source>
         <translation>&amp;Induljon el a számítógép bekapcsolásakor</translation>
     </message>
     <message>
@@ -1289,7 +1289,7 @@ Cím: %4
     </message>
     <message>
         <location line="+58"/>
-        <source>Connect to the Bitchcoin network through a SOCKS proxy.</source>
+        <source>Connect to the Envycoin network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1324,8 +1324,8 @@ Cím: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Bitchcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>A Bitchcoin-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
+        <source>Automatically open the Envycoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>A Envycoin-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1394,8 +1394,8 @@ Cím: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bitchcoin Core.</source>
-        <translation>Itt beállíthatod a felhasználófelület nyelvét. Ez a beállítás a Bitchcoin ujraindítása után lép érvénybe.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Envycoin Core.</source>
+        <translation>Itt beállíthatod a felhasználófelület nyelvét. Ez a beállítás a Envycoin ujraindítása után lép érvénybe.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1409,8 +1409,8 @@ Cím: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Bitchcoin addresses in the transaction list or not.</source>
-        <translation>Mutassa-e a Bitchcoin címeket a tranzakciólistában.</translation>
+        <source>Whether to show Envycoin addresses in the transaction list or not.</source>
+        <translation>Mutassa-e a Envycoin címeket a tranzakciólistában.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1484,8 +1484,8 @@ Cím: %4
     <message>
         <location line="+50"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitchcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a Bitchcoin hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Envycoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a Envycoin hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
     </message>
     <message>
         <location line="-155"/>
@@ -1554,7 +1554,7 @@ Cím: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Bitchcoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Envycoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1574,8 +1574,8 @@ Cím: %4
     </message>
     <message>
         <location line="-353"/>
-        <source>Cannot start bitchcoin: click-to-pay handler</source>
-        <translation>A bitchcoint nem lehet elindítani: click-to-pay handler</translation>
+        <source>Cannot start envycoin: click-to-pay handler</source>
+        <translation>A envycoint nem lehet elindítani: click-to-pay handler</translation>
     </message>
     <message>
         <location line="+58"/>
@@ -1643,8 +1643,8 @@ Cím: %4
     <message>
         <location filename="../bitcoin.cpp" line="+71"/>
         <location line="+11"/>
-        <source>Bitchcoin</source>
-        <translation>Bitchcoin</translation>
+        <source>Envycoin</source>
+        <translation>Envycoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1814,7 +1814,7 @@ Cím: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Bitchcoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Envycoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1824,8 +1824,8 @@ Cím: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Bitchcoin Core RPC console.</source>
-        <translation>Üdv a Bitchcoin RPC konzoljában!</translation>
+        <source>Welcome to the Envycoin Core RPC console.</source>
+        <translation>Üdv a Envycoin RPC konzoljában!</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1907,7 +1907,7 @@ Cím: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitchcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Envycoin network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2191,8 +2191,8 @@ Cím: %4
     </message>
     <message>
         <location line="-136"/>
-        <source>Enter a Bitchcoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Adj meg egy Bitchcoin-címet (pl.: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM )</translation>
+        <source>Enter a Envycoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Adj meg egy Envycoin-címet (pl.: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM )</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -2257,7 +2257,7 @@ Cím: %4
     <message>
         <location line="+3"/>
         <source>The amount exceeds your balance.</source>
-        <translation>Nincs ennyi bitchcoin az egyenlegeden.</translation>
+        <translation>Nincs ennyi envycoin az egyenlegeden.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2281,7 +2281,7 @@ Cím: %4
     </message>
     <message>
         <location line="+112"/>
-        <source>Warning: Invalid Bitchcoin address</source>
+        <source>Warning: Invalid Envycoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2384,7 +2384,7 @@ Cím: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the Bitchcoin URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitchcoin network.</source>
+        <source>A message that was attached to the Envycoin URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Envycoin network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2416,15 +2416,15 @@ Cím: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Bitchcoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Adj meg egy Bitchcoin-címet (pl.: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM )</translation>
+        <source>Enter a Envycoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Adj meg egy Envycoin-címet (pl.: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM )</translation>
     </message>
 </context>
 <context>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+48"/>
-        <source>Bitchcoin Core is shutting down...</source>
+        <source>Envycoin Core is shutting down...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2453,7 +2453,7 @@ Cím: %4
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Adj meg egy Bitchcoin-címet (pl.: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM )</translation>
+        <translation>Adj meg egy Envycoin-címet (pl.: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM )</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2494,7 +2494,7 @@ Cím: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Bitchcoin address</source>
+        <source>Sign the message to prove you own this Envycoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2526,11 +2526,11 @@ Cím: %4
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Adj meg egy Bitchcoin-címet (pl.: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM )</translation>
+        <translation>Adj meg egy Envycoin-címet (pl.: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM )</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Bitchcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Envycoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2546,8 +2546,8 @@ Cím: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+29"/>
         <location line="+3"/>
-        <source>Enter a Bitchcoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Adj meg egy Bitchcoin-címet (pl.: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM )</translation>
+        <source>Enter a Envycoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Adj meg egy Envycoin-címet (pl.: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM )</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2556,8 +2556,8 @@ Cím: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Bitchcoin signature</source>
-        <translation>Adja meg a Bitchcoin aláírást</translation>
+        <source>Enter Envycoin signature</source>
+        <translation>Adja meg a Envycoin aláírást</translation>
     </message>
     <message>
         <location line="+84"/>
@@ -2630,12 +2630,12 @@ Cím: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+28"/>
-        <source>Bitchcoin Core</source>
-        <translation>Bitchcoin Core</translation>
+        <source>Envycoin Core</source>
+        <translation>Envycoin Core</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>The Bitchcoin Core developers</source>
+        <source>The Envycoin Core developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3203,7 +3203,7 @@ Cím: %4
     </message>
 </context>
 <context>
-    <name>bitchcoin-core</name>
+    <name>envycoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+221"/>
         <source>Usage:</source>
@@ -3229,14 +3229,14 @@ Cím: %4
     </message>
     <message>
         <location line="+22"/>
-        <source>Specify configuration file (default: bitchcoin.conf)</source>
-        <translation>Konfigurációs fájl (alapértelmezett: bitchcoin.conf)
+        <source>Specify configuration file (default: envycoin.conf)</source>
+        <translation>Konfigurációs fájl (alapértelmezett: envycoin.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: bitchcoind.pid)</source>
-        <translation>pid-fájl (alapértelmezett: bitchcoind.pid)
+        <source>Specify pid file (default: envycoind.pid)</source>
+        <translation>pid-fájl (alapértelmezett: envycoind.pid)
 </translation>
     </message>
     <message>
@@ -3318,13 +3318,13 @@ Cím: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=bitchcoinrpc
+rpcuser=envycoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Bitchcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Envycoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3345,8 +3345,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitchcoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Bitchcoin Core is probably already running.</source>
-        <translation>Az %s adatkönyvtár nem zárható.  A Bitchcoin valószínűleg fut már.</translation>
+        <source>Cannot obtain a lock on data directory %s. Envycoin Core is probably already running.</source>
+        <translation>Az %s adatkönyvtár nem zárható.  A Envycoin valószínűleg fut már.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3390,8 +3390,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitchcoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitchcoin Core will not work properly.</source>
-        <translation>Figyelem: Ellenőrizd, hogy helyesen van-e beállítva a gépeden a dátum és az idő.  A Bitchcoin nem fog megfelelően működni, ha rosszul van beállítvaaz órád.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Envycoin Core will not work properly.</source>
+        <translation>Figyelem: Ellenőrizd, hogy helyesen van-e beállítva a gépeden a dátum és az idő.  A Envycoin nem fog megfelelően működni, ha rosszul van beállítvaaz órád.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3425,12 +3425,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitchcoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
-        <source>Bitchcoin Core Daemon</source>
+        <source>Envycoin Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Bitchcoin Core RPC client version</source>
+        <source>Envycoin Core RPC client version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3630,7 +3630,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitchcoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to Bitchcoin Core server</source>
+        <source>Send command to Envycoin Core server</source>
         <translation>Parancs küldése a Bicoin szervernek</translation>
     </message>
     <message>
@@ -3650,8 +3650,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitchcoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+2"/>
-        <source>Start Bitchcoin Core server</source>
-        <translation>Bitchcoin szerver indítása</translation>
+        <source>Start Envycoin Core server</source>
+        <translation>Envycoin szerver indítása</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3660,7 +3660,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitchcoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+10"/>
-        <source>Usage (deprecated, use bitchcoin-cli):</source>
+        <source>Usage (deprecated, use envycoin-cli):</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3935,13 +3935,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitchcoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitchcoin Core</source>
-        <translation>Hiba a wallet.dat betöltése közben: ehhez a tárcához újabb verziójú Bitchcoin-kliens szükséges</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Envycoin Core</source>
+        <translation>Hiba a wallet.dat betöltése közben: ehhez a tárcához újabb verziójú Envycoin-kliens szükséges</translation>
     </message>
     <message>
         <location line="+98"/>
-        <source>Wallet needed to be rewritten: restart Bitchcoin Core to complete</source>
-        <translation>A Tárca újraírása szükséges: Indítsa újra a teljesen a Bitchcoin-t</translation>
+        <source>Wallet needed to be rewritten: restart Envycoin Core to complete</source>
+        <translation>A Tárca újraírása szükséges: Indítsa újra a teljesen a Envycoin-t</translation>
     </message>
     <message>
         <location line="-100"/>
@@ -3986,7 +3986,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitchcoin Alert&quot; admin@fo
     <message>
         <location line="-6"/>
         <source>Insufficient funds</source>
-        <translation>Nincs elég bitchcoinod.</translation>
+        <translation>Nincs elég envycoinod.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -4000,8 +4000,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitchcoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="-32"/>
-        <source>Unable to bind to %s on this computer. Bitchcoin Core is probably already running.</source>
-        <translation>A %s nem elérhető ezen a gépen. A Bitchcoin valószínűleg fut már.</translation>
+        <source>Unable to bind to %s on this computer. Envycoin Core is probably already running.</source>
+        <translation>A %s nem elérhető ezen a gépen. A Envycoin valószínűleg fut már.</translation>
     </message>
     <message>
         <location line="+95"/>

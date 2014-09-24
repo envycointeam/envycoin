@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build bitchcoind(headless client) for OSX.
+This guide will show you how to build envycoind(headless client) for OSX.
 
 Notes
 -----
@@ -52,14 +52,14 @@ Optional: install Qt4
 
     sudo port install qt4-mac qrencode protobuf-cpp
 
-### Building `bitchcoind`
+### Building `envycoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:bitchcoin/bitchcoin.git bitchcoin
-        cd bitchcoin
+        git clone git@github.com:envycoin/envycoin.git envycoin
+        cd envycoin
 
-2.  Build bitchcoind (and Bitchcoin-Qt, if configured):
+2.  Build envycoind (and Envycoin-Qt, if configured):
 
         ./autogen.sh
         ./configure
@@ -88,14 +88,14 @@ If not, you can ensure that the Homebrew OpenSSL is correctly linked by running
 
 Rerunning "openssl version" should now return the correct version.
 
-### Building `bitchcoind`
+### Building `envycoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/bitchcoin/bitchcoin.git
-        cd bitchcoin
+        git clone https://github.com/envycoin/envycoin.git
+        cd envycoin
 
-2.  Build bitchcoind:
+2.  Build envycoind:
 
         ./autogen.sh
         ./configure
@@ -107,11 +107,11 @@ Rerunning "openssl version" should now return the correct version.
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `bitchcoind` for your own use.
+You can ignore this section if you are building `envycoind` for your own use.
 
-bitchcoind/bitchcoin-cli binaries are not included in the Bitchcoin-Qt.app bundle.
+envycoind/envycoin-cli binaries are not included in the Envycoin-Qt.app bundle.
 
-If you are building `bitchcoind` or `Bitchcoin-Qt` for others, your build machine should be set up
+If you are building `envycoind` or `Envycoin-Qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -132,29 +132,29 @@ As of December 2012, the `boost` port does not obey `macosx_deployment_target`.
 Download `http://gavinandresen-bitcoin.s3.amazonaws.com/boost_macports_fix.zip`
 for a fix.
 
-Once dependencies are compiled, see release-process.md for how the Bitchcoin-Qt.app
+Once dependencies are compiled, see release-process.md for how the Envycoin-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
 -------
 
-It's now available at `./bitchcoind`, provided that you are still in the `src`
+It's now available at `./envycoind`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./bitchcoind` to get the filename where it should be put, or just try these
+Run `./envycoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=bitchcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Bitchcoin/bitchcoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Bitchcoin/bitchcoin.conf"
+    echo -e "rpcuser=envycoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Envycoin/envycoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Envycoin/envycoin.conf"
 
 When next you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/Bitchcoin/debug.log
+    tail -f $HOME/Library/Application\ Support/Envycoin/debug.log
 
 Other commands:
 
-    ./bitchcoind -daemon # to start the bitchcoin daemon.
-    ./bitchcoin-cli --help  # for a list of command-line options.
-    ./bitchcoin-cli help    # When the daemon is running, to get a list of RPC commands
+    ./envycoind -daemon # to start the envycoin daemon.
+    ./envycoin-cli --help  # for a list of command-line options.
+    ./envycoin-cli help    # When the daemon is running, to get a list of RPC commands

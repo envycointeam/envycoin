@@ -9,7 +9,7 @@ Release Process
 ###update (commit) version in sources
 
 
-	bitchcoin-qt.pro
+	envycoin-qt.pro
 	contrib/verifysfbinaries/verify.sh
 	doc/README*
 	share/setup.nsi
@@ -27,11 +27,11 @@ Release Process
 
 ##perform gitian builds
 
- From a directory containing the bitchcoin source, gitian-builder and gitian.sigs
+ From a directory containing the envycoin source, gitian-builder and gitian.sigs
   
 	export SIGNER=(your gitian key, ie bluematt, sipa, etc)
 	export VERSION=(new version, e.g. 0.8.0)
-	pushd ./bitchcoin
+	pushd ./envycoin
 	git checkout v${VERSION}
 	popd
 	pushd ./gitian-builder
@@ -51,55 +51,55 @@ Release Process
 	wget 'https://download.qt-project.org/official_releases/qt/5.2/5.2.0/single/qt-everywhere-opensource-src-5.2.0.tar.gz'
 	wget 'https://protobuf.googlecode.com/files/protobuf-2.5.0.tar.bz2'
 	cd ..
-	./bin/gbuild ../bitchcoin/contrib/gitian-descriptors/boost-linux.yml
+	./bin/gbuild ../envycoin/contrib/gitian-descriptors/boost-linux.yml
 	mv build/out/boost-*.zip inputs/
-	./bin/gbuild ../bitchcoin/contrib/gitian-descriptors/deps-linux.yml
-	mv build/out/bitchcoin-deps-*.zip inputs/
-	./bin/gbuild ../bitchcoin/contrib/gitian-descriptors/boost-win.yml
+	./bin/gbuild ../envycoin/contrib/gitian-descriptors/deps-linux.yml
+	mv build/out/envycoin-deps-*.zip inputs/
+	./bin/gbuild ../envycoin/contrib/gitian-descriptors/boost-win.yml
 	mv build/out/boost-*.zip inputs/
-	./bin/gbuild ../bitchcoin/contrib/gitian-descriptors/deps-win.yml
-	mv build/out/bitchcoin-deps-*.zip inputs/
-	./bin/gbuild ../bitchcoin/contrib/gitian-descriptors/qt-win.yml
+	./bin/gbuild ../envycoin/contrib/gitian-descriptors/deps-win.yml
+	mv build/out/envycoin-deps-*.zip inputs/
+	./bin/gbuild ../envycoin/contrib/gitian-descriptors/qt-win.yml
 	mv build/out/qt-*.zip inputs/
-	./bin/gbuild ../bitchcoin/contrib/gitian-descriptors/protobuf-win.yml
+	./bin/gbuild ../envycoin/contrib/gitian-descriptors/protobuf-win.yml
 	mv build/out/protobuf-*.zip inputs/
 
- Build bitchcoind and bitchcoin-qt on Linux32, Linux64, and Win32:
+ Build envycoind and envycoin-qt on Linux32, Linux64, and Win32:
   
-	./bin/gbuild --commit bitchcoin=v${VERSION} ../bitchcoin/contrib/gitian-descriptors/gitian-linux.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../bitchcoin/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gbuild --commit envycoin=v${VERSION} ../envycoin/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../envycoin/contrib/gitian-descriptors/gitian-linux.yml
 	pushd build/out
-	zip -r bitchcoin-${VERSION}-linux-gitian.zip *
-	mv bitchcoin-${VERSION}-linux-gitian.zip ../../../
+	zip -r envycoin-${VERSION}-linux-gitian.zip *
+	mv envycoin-${VERSION}-linux-gitian.zip ../../../
 	popd
-	./bin/gbuild --commit bitchcoin=v${VERSION} ../bitchcoin/contrib/gitian-descriptors/gitian-win.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-win --destination ../gitian.sigs/ ../bitchcoin/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gbuild --commit envycoin=v${VERSION} ../envycoin/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win --destination ../gitian.sigs/ ../envycoin/contrib/gitian-descriptors/gitian-win.yml
 	pushd build/out
-	zip -r bitchcoin-${VERSION}-win-gitian.zip *
-	mv bitchcoin-${VERSION}-win-gitian.zip ../../../
+	zip -r envycoin-${VERSION}-win-gitian.zip *
+	mv envycoin-${VERSION}-win-gitian.zip ../../../
 	popd
 	popd
 
   Build output expected:
 
-  1. linux 32-bit and 64-bit binaries + source (bitchcoin-${VERSION}-linux-gitian.zip)
-  2. windows 32-bit and 64-bit binaries + installer + source (bitchcoin-${VERSION}-win-gitian.zip)
+  1. linux 32-bit and 64-bit binaries + source (envycoin-${VERSION}-linux-gitian.zip)
+  2. windows 32-bit and 64-bit binaries + installer + source (envycoin-${VERSION}-win-gitian.zip)
   3. Gitian signatures (in gitian.sigs/${VERSION}[-win]/(your gitian key)/
 
 repackage gitian builds for release as stand-alone zip/tar/installer exe
 
 **Linux .tar.gz:**
 
-	unzip bitchcoin-${VERSION}-linux-gitian.zip -d bitchcoin-${VERSION}-linux
-	tar czvf bitchcoin-${VERSION}-linux.tar.gz bitchcoin-${VERSION}-linux
-	rm -rf bitchcoin-${VERSION}-linux
+	unzip envycoin-${VERSION}-linux-gitian.zip -d envycoin-${VERSION}-linux
+	tar czvf envycoin-${VERSION}-linux.tar.gz envycoin-${VERSION}-linux
+	rm -rf envycoin-${VERSION}-linux
 
 **Windows .zip and setup.exe:**
 
-	unzip bitchcoin-${VERSION}-win-gitian.zip -d bitchcoin-${VERSION}-win
-	mv bitchcoin-${VERSION}-win/bitchcoin-*-setup.exe .
-	zip -r bitchcoin-${VERSION}-win.zip bitchcoin-${VERSION}-win
-	rm -rf bitchcoin-${VERSION}-win
+	unzip envycoin-${VERSION}-win-gitian.zip -d envycoin-${VERSION}-win
+	mv envycoin-${VERSION}-win/envycoin-*-setup.exe .
+	zip -r envycoin-${VERSION}-win.zip envycoin-${VERSION}-win
+	rm -rf envycoin-${VERSION}-win
 
 **Perform Mac build:**
 
@@ -111,10 +111,10 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 	make
 	export QTDIR=/opt/local/share/qt4  # needed to find translations/qt_*.qm files
 	T=$(contrib/qt_translations.py $QTDIR/translations src/qt/locale)
-        export CODESIGNARGS='--keychain ...path_to_keychain --sign "Developer ID Application: BTCHCOIN FOUNDATION, INC., THE"'
-	python2.7 contrib/macdeploy/macdeployqtplus Bitchcoin-Qt.app -sign -add-qt-tr $T -dmg -fancy contrib/macdeploy/fancy.plist
+        export CODESIGNARGS='--keychain ...path_to_keychain --sign "Developer ID Application: ENVYCOIN FOUNDATION, INC., THE"'
+	python2.7 contrib/macdeploy/macdeployqtplus Envycoin-Qt.app -sign -add-qt-tr $T -dmg -fancy contrib/macdeploy/fancy.plist
 
- Build output expected: Bitchcoin-Qt.dmg
+ Build output expected: Envycoin-Qt.dmg
 
 ###Next steps:
 
@@ -125,7 +125,7 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 
 * create SHA256SUMS for builds, and PGP-sign it
 
-* update bitchcoin.com version
+* update envycoin.com version
   make sure all OS download links go to the right versions
   
 * update forum version
@@ -147,42 +147,42 @@ Commit your signature to gitian.sigs:
 
 ### After 3 or more people have gitian-built, repackage gitian-signed zips:
 
-From a directory containing bitchcoin source, gitian.sigs and gitian zips
+From a directory containing envycoin source, gitian.sigs and gitian zips
 
 	export VERSION=(new version, e.g. 0.8.0)
-	mkdir bitchcoin-${VERSION}-linux-gitian
-	pushd bitchcoin-${VERSION}-linux-gitian
-	unzip ../bitchcoin-${VERSION}-linux-gitian.zip
+	mkdir envycoin-${VERSION}-linux-gitian
+	pushd envycoin-${VERSION}-linux-gitian
+	unzip ../envycoin-${VERSION}-linux-gitian.zip
 	mkdir gitian
-	cp ../bitchcoin/contrib/gitian-downloader/*.pgp ./gitian/
+	cp ../envycoin/contrib/gitian-downloader/*.pgp ./gitian/
 	for signer in $(ls ../gitian.sigs/${VERSION}/); do
-	 cp ../gitian.sigs/${VERSION}/${signer}/bitchcoin-build.assert ./gitian/${signer}-build.assert
-	 cp ../gitian.sigs/${VERSION}/${signer}/bitchcoin-build.assert.sig ./gitian/${signer}-build.assert.sig
+	 cp ../gitian.sigs/${VERSION}/${signer}/envycoin-build.assert ./gitian/${signer}-build.assert
+	 cp ../gitian.sigs/${VERSION}/${signer}/envycoin-build.assert.sig ./gitian/${signer}-build.assert.sig
 	done
-	zip -r bitchcoin-${VERSION}-linux-gitian.zip *
-	cp bitchcoin-${VERSION}-linux-gitian.zip ../
+	zip -r envycoin-${VERSION}-linux-gitian.zip *
+	cp envycoin-${VERSION}-linux-gitian.zip ../
 	popd
-	mkdir bitchcoin-${VERSION}-win-gitian
-	pushd bitchcoin-${VERSION}-win-gitian
-	unzip ../bitchcoin-${VERSION}-win-gitian.zip
+	mkdir envycoin-${VERSION}-win-gitian
+	pushd envycoin-${VERSION}-win-gitian
+	unzip ../envycoin-${VERSION}-win-gitian.zip
 	mkdir gitian
-	cp ../bitchcoin/contrib/gitian-downloader/*.pgp ./gitian/
+	cp ../envycoin/contrib/gitian-downloader/*.pgp ./gitian/
 	for signer in $(ls ../gitian.sigs/${VERSION}-win/); do
-	 cp ../gitian.sigs/${VERSION}-win/${signer}/bitchcoin-build.assert ./gitian/${signer}-build.assert
-	 cp ../gitian.sigs/${VERSION}-win/${signer}/bitchcoin-build.assert.sig ./gitian/${signer}-build.assert.sig
+	 cp ../gitian.sigs/${VERSION}-win/${signer}/envycoin-build.assert ./gitian/${signer}-build.assert
+	 cp ../gitian.sigs/${VERSION}-win/${signer}/envycoin-build.assert.sig ./gitian/${signer}-build.assert.sig
 	done
-	zip -r bitchcoin-${VERSION}-win-gitian.zip *
-	cp bitchcoin-${VERSION}-win-gitian.zip ../
+	zip -r envycoin-${VERSION}-win-gitian.zip *
+	cp envycoin-${VERSION}-win-gitian.zip ../
 	popd
 
 - Upload gitian zips to SourceForge
 
 - Announce the release:
 
-  - Add the release to bitchcoin.com
+  - Add the release to envycoin.com
 
-  - Announce on reddit /r/bitchcoin, /r/bitchcoindev
+  - Announce on reddit /r/envycoin, /r/envycoindev
 
-  - Release sticky on discuss bitchcoin: https://discuss.bitchcoin.com/categories/announcements
+  - Release sticky on discuss envycoin: https://discuss.envycoin.com/categories/announcements
 
 - Celebrate 

@@ -51,10 +51,10 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::BTCH);
+        settings.setValue("nDisplayUnit", BitcoinUnits::ENVY);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
     if(!BitcoinUnits::valid(nDisplayUnit))
-        nDisplayUnit = BitcoinUnits::BTCH;
+        nDisplayUnit = BitcoinUnits::ENVY;
 
     if (!settings.contains("bDisplayAddresses"))
         settings.setValue("bDisplayAddresses", false);

@@ -1,5 +1,5 @@
 ---
-name: "bitchcoin-deps"
+name: "envycoin-deps"
 suites:
 - "precise"
 architectures:
@@ -126,5 +126,5 @@ script: |
     done
     #
     cd $INSTALLPREFIX
-    find include lib | sort | zip -X@ $OUTDIR/bitchcoin-deps-win$BITS-gitian-r11.zip
+    find include lib | sort | zip -X@ $OUTDIR/envycoin-deps-win$BITS-gitian-r11.zip
   done # for BITS in

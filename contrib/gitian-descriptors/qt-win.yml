@@ -15,8 +15,8 @@ reference_datetime: "2011-01-30 00:00:00"
 remotes: []
 files:
 - "qt-everywhere-opensource-src-5.2.0.tar.gz"
-- "bitchcoin-deps-win32-gitian-r11.zip"
-- "bitchcoin-deps-win64-gitian-r11.zip"
+- "envycoin-deps-win32-gitian-r11.zip"
+- "envycoin-deps-win64-gitian-r11.zip"
 script: |
   # Defines
   export TZ=UTC
@@ -46,9 +46,9 @@ script: |
     #
     mkdir -p $INSTALLPREFIX $INSTALLPREFIX/host/bin $DEPSDIR $BUILDDIR
     #
-    # Need mingw-compiled openssl from bitchcoin-deps:
+    # Need mingw-compiled openssl from envycoin-deps:
     cd $DEPSDIR
-    unzip $INDIR/bitchcoin-deps-win${BITS}-gitian-r11.zip
+    unzip $INDIR/envycoin-deps-win${BITS}-gitian-r11.zip
     #
     cd $BUILDDIR
     #

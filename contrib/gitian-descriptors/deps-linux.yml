@@ -1,5 +1,5 @@
 ---
-name: "bitchcoin"
+name: "envycoin"
 suites:
 - "precise"
 architectures:
@@ -95,4 +95,4 @@ script: |
   done
   #
   cd $STAGING
-  find include lib bin host | sort | zip -X@ $OUTDIR/bitchcoin-deps-linux${GBUILD_BITS}-gitian-r4.zip
+  find include lib bin host | sort | zip -X@ $OUTDIR/envycoin-deps-linux${GBUILD_BITS}-gitian-r4.zip

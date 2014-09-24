@@ -25,7 +25,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::BTCH)
+    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::ENVY)
     {
 
     }
@@ -122,9 +122,9 @@ OverviewPage::OverviewPage(QWidget *parent) :
     ui->labelTransactionsStatus->setText("(" + tr("out of sync") + ")");
 
     // Customized branding image.
-    boost::filesystem::path fractalpath = GetDataDir(false);
-    fractalpath /= "bitchcoin.png";
-    QPixmap shibecoin(fractalpath.string().c_str());
+    boost::filesystem::path envypath = GetDataDir(false);
+    envypath /= "envycoin.png";
+    QPixmap shibecoin(envypath.string().c_str());
 
     if ( !shibecoin.isNull() ) {
         ui->label_wallet_bgcoin->setPixmap(shibecoin);
@@ -198,7 +198,7 @@ void OverviewPage::setWalletModel(WalletModel *model)
         connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
     }
 
-    // update the display unit, to not use the default ("BTCH")
+    // update the display unit, to not use the default ("ENVY")
     updateDisplayUnit();
 }
 

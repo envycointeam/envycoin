@@ -1,6 +1,6 @@
-bitchcoin-qt usr/bin
-share/pixmaps/bitchcoin32.xpm usr/share/pixmaps
-share/pixmaps/bitchcoin16.xpm usr/share/pixmaps
-share/pixmaps/bitchcoin128.png usr/share/pixmaps
-debian/bitchcoin-qt.desktop usr/share/applications
-debian/bitchcoin-qt.protocol usr/share/kde4/services/
+envycoin-qt usr/bin
+share/pixmaps/envycoin32.xpm usr/share/pixmaps
+share/pixmaps/envycoin16.xpm usr/share/pixmaps
+share/pixmaps/envycoin128.png usr/share/pixmaps
+debian/envycoin-qt.desktop usr/share/applications
+debian/envycoin-qt.protocol usr/share/kde4/services/

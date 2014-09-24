@@ -1,12 +1,12 @@
-# bash programmable completion for bitchcoind(1) and bitchcoin-cli(1)
+# bash programmable completion for envycoind(1) and envycoin-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have bitchcoind && {
+have envycoind && {
 
-# call $bitchcoind for RPC
-_bitchcoin_rpc() {
+# call $envycoind for RPC
+_envycoin_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -16,23 +16,23 @@ _bitchcoin_rpc() {
                 ;;
         esac
     done
-    $bitchcoind "${rpcargs[@]}" "$@"
+    $envycoind "${rpcargs[@]}" "$@"
 }
 
-# Add bitchcoin accounts to COMPREPLY
-_bitchcoin_accounts() {
+# Add envycoin accounts to COMPREPLY
+_envycoin_accounts() {
     local accounts
-    accounts=$(_bitchcoin_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
+    accounts=$(_envycoin_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_bitchcoind() {
+_envycoind() {
     local cur prev words=() cword
-    local bitchcoind
+    local envycoind
 
-    # save and use original argument to invoke bitchcoind
-    # bitchcoind might not be in $PATH
-    bitchcoind="$1"
+    # save and use original argument to invoke envycoind
+    # envycoind might not be in $PATH
+    envycoind="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -70,7 +70,7 @@ _bitchcoind() {
                 return 0
                 ;;
             move|setaccount)
-                _bitchcoin_accounts
+                _envycoin_accounts
                 return 0
                 ;;
         esac
@@ -86,7 +86,7 @@ _bitchcoind() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _bitchcoin_accounts
+            _envycoin_accounts
             return 0
             ;;
     esac
@@ -110,12 +110,12 @@ _bitchcoind() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($bitchcoind --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($envycoind --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_bitchcoin_rpc help 2>/dev/null | awk '{ print $1; }')
+                commands=$(_envycoin_rpc help 2>/dev/null | awk '{ print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -129,7 +129,7 @@ _bitchcoind() {
     esac
 }
 
-complete -F _bitchcoind bitchcoind bitchcoin-cli
+complete -F _envycoind envycoind envycoin-cli
 }
 
 # Local variables:

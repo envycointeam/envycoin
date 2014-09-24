@@ -15,11 +15,11 @@ endif
 bin_PROGRAMS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += bitchcoind
+  bin_PROGRAMS += envycoind
 endif
 
 if BUILD_BITCOIN_CLI
-  bin_PROGRAMS += bitchcoin-cli
+  bin_PROGRAMS += envycoin-cli
 endif
 
 SUBDIRS = . $(BUILD_QT)
@@ -165,36 +165,36 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
 #
 
-# bitchcoind binary #
-bitchcoind_LDADD = \
+# envycoind binary #
+envycoind_LDADD = \
   libbitcoin_server.a \
   libbitcoin_cli.a \
   libbitcoin_common.a \
   $(LIBLEVELDB) \
   $(LIBMEMENV)
 if ENABLE_WALLET
-bitchcoind_LDADD += libbitcoin_wallet.a libbitcoin_server_wallet.a
+envycoind_LDADD += libbitcoin_wallet.a libbitcoin_server_wallet.a
 endif
-bitchcoind_SOURCES = bitchcoind.cpp
+envycoind_SOURCES = envycoind.cpp
 #
 
 if TARGET_WINDOWS
-bitchcoind_SOURCES += bitchcoind-res.rc
+envycoind_SOURCES += envycoind-res.rc
 endif
 
 AM_CPPFLAGS += $(BDB_CPPFLAGS)
-bitchcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
+envycoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
 
-# bitchcoin-cli binary #
-bitchcoin_cli_LDADD = \
+# envycoin-cli binary #
+envycoin_cli_LDADD = \
   libbitcoin_cli.a \
   libbitcoin_common.a \
   $(BOOST_LIBS)
-bitchcoin_cli_SOURCES = bitchcoin-cli.cpp
+envycoin_cli_SOURCES = envycoin-cli.cpp
 #
 
 if TARGET_WINDOWS
-bitchcoin_cli_SOURCES += bitchcoin-cli-res.rc
+envycoin_cli_SOURCES += envycoin-cli-res.rc
 endif
 
 # NOTE: This dependency is not strictly necessary, but without it make may try to build both in parallel, which breaks the LevelDB build system in a race

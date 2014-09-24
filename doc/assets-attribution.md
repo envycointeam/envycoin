@@ -97,8 +97,8 @@ Jonas Schnelli
 * License: MIT
 
 ### Assets Used
-	src/qt/res/icons/bitchcoin.icns, src/qt/res/src/bitchcoin.svg,
-	src/qt/res/src/bitchcoin.ico, src/qt/res/src/bitchcoin.png,
-	src/qt/res/src/bitchcoin_testnet.png, docs/bitchcoin_logo_doxygen.png,
+	src/qt/res/icons/envycoin.icns, src/qt/res/src/envycoin.svg,
+	src/qt/res/src/envycoin.ico, src/qt/res/src/envycoin.png,
+	src/qt/res/src/envycoin_testnet.png, docs/envycoin_logo_doxygen.png,
 	src/qt/res/icons/toolbar.png, src/qt/res/icons/toolbar_testnet.png,
 	src/qt/res/images/splash.png, src/qt/res/images/splash_testnet.png

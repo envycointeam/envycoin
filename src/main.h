@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2011-2013 The Litecoin developers
-// Copyright (c) 2013-2014 The bitchcoin developers
+// Copyright (c) 2013-2014 The envycoin developers
 // Copyright (c)      2014 The Inutoshi developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -64,7 +64,7 @@ static const int64_t DUST_SOFT_LIMIT = 1000;
 /** Dust Hard Limit, ignored as wallet inputs (mininput default) */
 static const int64_t DUST_HARD_LIMIT = 100;
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
-static const int COINBASE_MATURITY = 60*72; // about 72 hours, so people ahve something to bitch about
+static const int COINBASE_MATURITY = 120; // about 2 hours
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 /** Maximum number of script-checking threads allowed */
@@ -301,14 +301,14 @@ inline bool AllowFree(double dPriority)
 {
     // Large (in bytes) low-priority (new, small-coin) transactions
     // need a fee.
-        return dPriority > 100 * COIN * 1440 / 250; // bitchcoin: 1440 blocks found a day. Priority cutoff is 100 bitchcoin day / 250 bytes.
+        return dPriority > 100 * COIN * 1440 / 250; // envycoin: 1440 blocks found a day. Priority cutoff is 100 envycoin day / 250 bytes.
     }
 
 /** Get the maturity depth for coinbase transactions at a given height.
     @param[in] nHeight  The height at which to check maturity for
     @return the depth at which the coinbase transaction matures
  */
-// bitchcoin specific implementation, standardizes checks for the hard maturity change at block 145k
+// envycoin specific implementation, standardizes checks for the hard maturity change at block 145k
 int GetRequiredMaturityDepth(int nHeight);
 
 // Check whether all inputs of this transaction are valid (no double spends, scripts & sigs, amounts)

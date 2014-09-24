@@ -20,8 +20,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Bitchcoin (http://www.bitchcoin.com/),
- * which enables instant payments to anyone, anywhere in the world. Bitchcoin uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called Envycoin (http://www.envycoin.com/),
+ * which enables instant payments to anyone, anywhere in the world. Envycoin uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -63,7 +63,7 @@ bool AppInit(int argc, char* argv[])
         //
         // Parameters
         //
-        // If Qt is used, parameters/bitchcoin.conf are parsed in qt/bitchcoin.cpp's main()
+        // If Qt is used, parameters/envycoin.conf are parsed in qt/envycoin.cpp's main()
         ParseParameters(argc, argv);
         if (!boost::filesystem::is_directory(GetDataDir(false)))
         {
@@ -79,14 +79,14 @@ bool AppInit(int argc, char* argv[])
 
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
-            // First part of help message is specific to bitchcoind / RPC client
-            std::string strUsage = _("Bitchcoin Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n\n" +
+            // First part of help message is specific to envycoind / RPC client
+            std::string strUsage = _("Envycoin Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  bitchcoind [options]                     " + _("Start Bitchcoin server") + "\n" +
-                _("Usage (deprecated, use bitchcoin-cli):") + "\n" +
-                  "  bitchcoind [options] <command> [params]  " + _("Send command to Bitchcoin server") + "\n" +
-                  "  bitchcoind [options] help                " + _("List commands") + "\n" +
-                  "  bitchcoind [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  envycoind [options]                     " + _("Start Envycoin server") + "\n" +
+                _("Usage (deprecated, use envycoin-cli):") + "\n" +
+                  "  envycoind [options] <command> [params]  " + _("Send command to Envycoin server") + "\n" +
+                  "  envycoind [options] help                " + _("List commands") + "\n" +
+                  "  envycoind [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
             strUsage += "\n" + HelpMessageCli(false);
@@ -98,7 +98,7 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "bitchcoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "envycoin:"))
                 fCommandLine = true;
 
         if (fCommandLine)
@@ -110,7 +110,7 @@ bool AppInit(int argc, char* argv[])
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon)
         {
-            fprintf(stdout, "Bitchcoin server starting\n");
+            fprintf(stdout, "Envycoin server starting\n");
 
             // Daemonize
             pid_t pid = fork();
@@ -168,7 +168,7 @@ int main(int argc, char* argv[])
 {
     bool fRet = false;
 
-    // Connect bitchcoind signal handlers
+    // Connect envycoind signal handlers
     noui_connect();
 
     fRet = AppInit(argc, argv);

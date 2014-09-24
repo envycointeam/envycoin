@@ -24,11 +24,11 @@ public:
      */
     enum Unit   //Note: preserve positions in order to preserve existing settings
     {
-        BTCH,
-        //formerly mBTCH
+        ENVY,
+        //formerly mENVY
         //formerly Cunt
-        MBTCH = 3,
-        kBTCH = 4,
+        MENVY = 3,
+        kENVY = 4,
         Cunt = 5
     };
 

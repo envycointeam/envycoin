@@ -1,33 +1,33 @@
 #!/usr/bin/make -f
 # -*- mode: makefile; coding: utf-8 -*-
 
-#DEB_MAKE_CHECK_TARGET = test_bitchcoin
-#build/bitchcoind::
-#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_bitchcoin)
+#DEB_MAKE_CHECK_TARGET = test_envycoin
+#build/envycoind::
+#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_envycoin)
 
-DEB_INSTALL_EXAMPLES_bitchcoind += debian/examples/*
-DEB_INSTALL_MANPAGES_bitchcoind += debian/manpages/*
+DEB_INSTALL_EXAMPLES_envycoind += debian/examples/*
+DEB_INSTALL_MANPAGES_envycoind += debian/manpages/*
 
 %:
 	dh --with bash-completion $@
 
 override_dh_auto_build:
-	cd src; $(MAKE) -f makefile.unix bitchcoind
+	cd src; $(MAKE) -f makefile.unix envycoind
 	$(MAKE)
 
 override_dh_auto_clean:
-	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f bitchcoin-qt; fi
+	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f envycoin-qt; fi
 	cd src; $(MAKE) -f makefile.unix clean
 
 override_dh_auto_configure:
-	qmake bitchcoin-qt.pro USE_QRCODE=1
+	qmake envycoin-qt.pro USE_QRCODE=1
 
 override_dh_auto_test:
-	cd src; $(MAKE) -f makefile.unix test_bitchcoin
-	src/test_bitchcoin
+	cd src; $(MAKE) -f makefile.unix test_envycoin
+	src/test_envycoin
 
 # Ensure wrapper is set executable
-binary-post-install/bitchcoind:
-	chmod +x $(cdbs_curdestdir)usr/bin/bitchcoind
-binary-post-install/bitchcoin-qt:
-	chmod +x $(cdbs_curdestdir)usr/bin/bitchcoin-qt
+binary-post-install/envycoind:
+	chmod +x $(cdbs_curdestdir)usr/bin/envycoind
+binary-post-install/envycoin-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/envycoin-qt

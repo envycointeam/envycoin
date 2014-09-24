@@ -37,11 +37,11 @@ static bool AppInitRPC(int argc, char* argv[])
     if (argc<2 || mapArgs.count("-?") || mapArgs.count("--help"))
     {
         // First part of help message is specific to RPC client
-        std::string strUsage = _("Bitchcoin RPC client version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Envycoin RPC client version") + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  bitchcoin-cli [options] <command> [params]  " + _("Send command to Bitchcoin server") + "\n" +
-              "  bitchcoin-cli [options] help                " + _("List commands") + "\n" +
-              "  bitchcoin-cli [options] help <command>      " + _("Get help for a command") + "\n";
+              "  envycoin-cli [options] <command> [params]  " + _("Send command to Envycoin server") + "\n" +
+              "  envycoin-cli [options] help                " + _("List commands") + "\n" +
+              "  envycoin-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
         strUsage += "\n" + HelpMessageCli(true);
 

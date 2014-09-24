@@ -3,7 +3,7 @@
 // Copyright (c) 2011-2013 The Litecoin developers
 // Copyright (c) 2013-2014 The Dogecoin developers
 // Copyright (c)      2014 The Inutoshi developers
-// Copyright (c)      2014 The Bitchcoin developers
+// Copyright (c)      2014 The Envycoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -33,7 +33,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Bitchcoin cannot be compiled without assertions."
+# error "Envycoin cannot be compiled without assertions."
 #endif
 
 //
@@ -77,7 +77,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Bitchcoin Signed Message:\n";
+const string strMessageMagic = "Envycoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -710,7 +710,7 @@ int64_t GetMinFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree, 
 
     int64_t nMinFee = (1 + (int64_t)nBytes / 1000) * nBaseFee;
 
-    // Bitchcoin
+    // Envycoin
     // To limit dust spam, add nBaseFee for each output less than DUST_SOFT_LIMIT
     BOOST_FOREACH(const CTxOut& txout, tx.vout)
         if (txout.nValue < DUST_SOFT_LIMIT)
@@ -1126,8 +1126,8 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 }
 
 // New Difficulty adjustement and reward scheme by /u/lleti, rog1121, and DigiByte (DigiShield Developers).
-static const int64_t nTargetTimespan = 60 ; // Bitchcoin: every 1 minute
-static const int64_t nTargetSpacing = 60; // Bitchcoin: 1 minute
+static const int64_t nTargetTimespan = 60 ; // Envycoin: every 1 minute
+static const int64_t nTargetSpacing = 60; // Envycoin: 1 minute
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
 //
@@ -1201,7 +1201,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlock *pb
         return pindexLast->nBits;
     }
 
-    // Bitchcoin: This fixes an issue where a 51% attack can change difficulty at will.
+    // Envycoin: This fixes an issue where a 51% attack can change difficulty at will.
     // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
     int blockstogoback = retargetInterval-1;
     if ((pindexLast->nHeight+1) != retargetInterval)
@@ -1261,7 +1261,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlock *pb
         dDiff /= 256.0;
         nShift--;
     }
-    LogPrintf("bitching difficulty: %f\n",dDiff);
+    LogPrintf("next difficulty: %f\n",dDiff);
 
     return bnNew.GetCompact();
 }
@@ -1705,7 +1705,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("bitchcoin-scriptch");
+    RenameThread("envycoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -1750,7 +1750,7 @@ bool ConnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex, C
         }
     }
 
-    // BIP16 was always active in Bitchcoin
+    // BIP16 was always active in Envycoin
     bool fStrictPayToScriptHash = true;
 
     unsigned int flags = SCRIPT_VERIFY_NOCACHE |
@@ -2440,7 +2440,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
 
 bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned int nRequired, unsigned int nToCheck)
 {
-    // Bitchcoin: temporarily disable v2 block lockin until we are ready for v2 transition
+    // Envycoin: temporarily disable v2 block lockin until we are ready for v2 transition
     return false;
 
     unsigned int nFound = 0;

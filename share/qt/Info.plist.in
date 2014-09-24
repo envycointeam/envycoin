@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@, Copyright © 2013-@COPYRIGHT_YEAR@ Bitchcoin Core developers, 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@, Copyright © 2013-@COPYRIGHT_YEAR@ Envycoin Core developers, 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Bitchcoin-Qt</string>
+  <string>Envycoin-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>com.bitchcoin.wallet-qt</string>
+  <string>com.envycoin.wallet-qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>com.bitchcoin.BitchcoinPayment</string>
+      <string>com.envycoin.EnvycoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>bitchcoin</string>
+        <string>envycoin</string>
       </array>
     </dict>
   </array>
@@ -52,9 +52,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>com.bitchcoin.paymentrequest</string>
+      <string>com.envycoin.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Bitchcoin payment request</string>
+      <string>Envycoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-bitchcoin-payment-request</string>
+        <string>application/x-envycoin-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>bitchcoinpaymentrequest</string>
+          <string>envycoinpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>com.bitchcoin.paymentrequest</string>
+        <string>com.envycoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>
