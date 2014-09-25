@@ -3313,8 +3313,8 @@ Address: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 6112 or testnet: 5112)</source>
-        <translation>Listen for connections on &lt;port&gt; (default: 6112 or testnet: 5112)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 9112 or testnet: 19112)</source>
+        <translation>Listen for connections on &lt;port&gt; (default: 9112 or testnet: 19112)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3523,7 +3523,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Envycoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 6111 or testnet: 5111)</source>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 9111 or testnet: 19111)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

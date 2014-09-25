@@ -10,8 +10,8 @@ Envycoin is a cryptocurrency like Bitcoin, although with many key differences. E
 
 Envycoin specs:
 
-* RPC 6111
-* P2P 6112
+* RPC 9111
+* P2P 9112
 * 20 ENVY per block for 1st month. Then drops to 10 ENVY
 * Every 10K blocks, there is a bitch block with no reward
 * no premine
