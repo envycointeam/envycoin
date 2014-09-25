@@ -1106,20 +1106,37 @@ int static generateMTRandom(unsigned int s, int range)
 
 int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 {
-    int64_t reward = 10 * COIN;
+    int64_t reward = 5 * COIN;
+    int64_t month=60*24*30;
+    int64_t phase0=500; //ICO period, just for maintenance
+    int64_t phase1=phase0+50; //fair launch
+    int64_t phase2=phase1+month*6; //phase 1 of public mining
+    int64_t phase3=phase2+9481590; //phase 2 of public mining
     int64_t sub=reward;
 
-    if(nHeight<5)
+    if(nHeight==1)
+    {
+        sub=50000000*COIN; //50M coins for ICO only
+    }
+    else if(nHeight<phase0)
     {
         sub=0;
     }
-    else if(nHeight<60*24*30)
+    else if(nHeight<phase1)
     {
-        sub=20*COIN;
+        sub=1*COIN;
     }
-    if(nHeight%10000==0)
+    else if(nHeight<phase2)
     {
-        return 0; //Bitch block every 10K
+        sub=10*COIN;
+    }
+    else if(nHeight<phase3)
+    {
+        sub=5*COIN;
+    }
+    else
+    {
+        sub=0; //final phase. Only txfees
     }
     return sub+nFees;
 
