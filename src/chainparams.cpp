@@ -44,7 +44,7 @@ public:
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
         // be spent as it did not originally exist in the database.
-        const char* pszTimestamp = "NY Times 9/20/2014 ex-employees say home depot left data vulnerable";
+        const char* pszTimestamp = "NY Times 9/25/2014 PRESIDENT, AT U.N., VOWS TO COUNTER EXTREMIST THREAT";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -59,13 +59,9 @@ public:
         genesis.nBits    = 0x1e0ffff0;
 
 
-        genesis.nTime = 1411271178;
-        genesis.nNonce = 614264;
-        assert(genesis.hashMerkleRoot == uint256("0x7fe1914ce8ec112ed706ac0c1ace60c6a1c3c238293d94256b2083d8e8729f21"));
-        assert(genesis.GetHash() == uint256("0x000009ee1dec51a93d25a3a3230bfb2083180a926f4eddd61ec58e9c01cbb15b"));
 
 
-        if (false) 
+        if (true) 
         {
             //This will output (to stdout) the code for a new genesis block when it is found
             genesis.nTime=time(NULL);
@@ -101,8 +97,6 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         vSeeds.push_back(CDNSSeedData("earlz.net", "earlz.net"));
-        vSeeds.push_back(CDNSSeedData("b1.earlz.net", "b1.earlz.net"));
-        vSeeds.push_back(CDNSSeedData("b2.earlz.net", "b2.earlz.net"));
 
 
 
