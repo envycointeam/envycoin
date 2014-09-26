@@ -107,10 +107,10 @@ public:
 
 
         // Workaround for Boost not being quite compatible with C++11;
-        std::vector<unsigned char> pka = list_of(18);
+        std::vector<unsigned char> pka = list_of(33); //E
         base58Prefixes[PUBKEY_ADDRESS] = pka;
         
-        std::vector<unsigned char> sca = list_of(142);
+        std::vector<unsigned char> sca = list_of(92); //e
         base58Prefixes[SCRIPT_ADDRESS] = sca;
 
         std::vector<unsigned char> sk  = list_of(128);
