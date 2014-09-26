@@ -1,7 +1,8 @@
 # Envycoin Core [ENVY]
 ==========================
 
-![Envycoin](http://i.imgur.com/O3jzScK.png)
+THIS IS PRELIMINARY CODE. IT WILL NOT WORK YET.
+
 
 ## What is Envycoin?
 Envycoin is a cryptocurrency like Bitcoin, although with many key differences. Envycoin's wallet is forked from Bitcoin 0.9.2, and thus has a build process slightly different from most altcoins.
@@ -10,14 +11,6 @@ Envycoin is a cryptocurrency like Bitcoin, although with many key differences. E
 
 Envycoin specs:
 
-* RPC 9111
-* P2P 9112
-* 20 ENVY per block for 1st month. Then drops to 10 ENVY
-* Every 10K blocks, there is a bitch block with no reward
-* no premine
-* X11 because it's the one people bitch the least about
-* First "fair ninja" 
-* idk 
 
 
 ## License
@@ -26,7 +19,6 @@ for more information or see http://opensource.org/licenses/MIT.
 
 ## Development and contributions
 Development is ongoing and the development team as well as other volunteers can freely work in their own trees and submit pull requests when features or bug fixes are ready.
-
 
 
 ##  Building envycoind/envycoin-cli/envycoin-qt (these are actually useful)
@@ -39,3 +31,13 @@ Development is ongoing and the development team as well as other volunteers can 
 
 ## Network ports
 
+* RPC: 9111
+* P2P: 9112
+
+        pchMessageStart[0] = 0xf3;
+        pchMessageStart[1] = 0xf2;
+        pchMessageStart[2] = 0xf2;
+        pchMessageStart[3] = 0xf3;
+
+
+POD-CryptoAsian
